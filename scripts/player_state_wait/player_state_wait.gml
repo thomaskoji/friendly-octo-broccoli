@@ -1,9 +1,19 @@
-if (state_new)
+//STEP---------------------------------------
+if(argument0==step)
 {
-	sprite_index = spr_player;
+	
+	if(run[held])
+	{
+		truestate_switch(States.run)
+	}
 }
 
-if (velocity[XAXIS] > 0 || velocity[YAXIS] > 0)
+
+//DRAW---------------------------------------
+else if(argument0==draw)
 {
-	truestate_switch(States.run)
+	if(state_new)
+	{
+		sprite_index = spr_player;
+	}
 }

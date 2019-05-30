@@ -1,0 +1,27 @@
+Converting GML script : ${project_dir}\scripts\wall_escape\wall_escape.gml
+Converted description : /// @description wall_escape(colliding object, precision <greater than 0>)/// @function wall_escape
+/// @param colliding object
+/// @param  precision <greater than 0>
+
+Font fnt_consolas has been converted to font family Consolas (Regular). Font has been regenerated, small inconsistencies may occur.
+Converting GML script : ${project_dir}\objects\obj_player\Create_0.gml
+Converted description : /// @description Player Properties
+
+Converting GML script : ${project_dir}\objects\obj_player\Step_0.gml
+Converted description : /// @description Read Controls and set movement direction.
+
+Converting GML script : ${project_dir}\objects\obj_player\Draw_64.gml
+Converted description : /// @description Draw Debug Text
+
+macOS icon ${options_dir}\mac\icons\icon512.png written out as 32-bit.
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2.
+Converting GML script : ${project_dir}\scripts\movement_and_collision\movement_and_collision.gml
+Converted description : /// @description movement_and_collision(direction, movespeed, wall object)/// @function movement_and_collision
+/// @param direction
+/// @param  movespeed
+/// @param  wall object
+
+Converting GML script : ${project_dir}\scripts\player_read_controls\player_read_controls.gml
+Converted description : /// @description player_read_controls()/// @function player_read_controls
+
+game speed set to 60
