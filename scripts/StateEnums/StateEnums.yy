@@ -1,8 +1,8 @@
 {
-    "id": "11077617-96fb-4143-89b0-57eb24a19cfe",
+    "id": "6ad7e09f-d323-4a6b-a34f-67cd0bb9a845",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Macros",
+    "name": "StateEnums",
     "IsCompatibility": false,
     "IsDnD": false
 }

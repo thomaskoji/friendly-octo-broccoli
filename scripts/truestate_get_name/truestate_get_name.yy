@@ -1,8 +1,8 @@
 {
-    "id": "11077617-96fb-4143-89b0-57eb24a19cfe",
+    "id": "146f82bb-ff86-447f-960a-05b4c90b1433",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Macros",
+    "name": "truestate_get_name",
     "IsCompatibility": false,
     "IsDnD": false
 }

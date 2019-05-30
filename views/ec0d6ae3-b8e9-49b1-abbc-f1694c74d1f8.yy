@@ -4,7 +4,7 @@
     "mvc": "1.1",
     "name": "ec0d6ae3-b8e9-49b1-abbc-f1694c74d1f8",
     "children": [
-        "46a33e4a-a3eb-477b-be09-3bae6f7a134c"
+        "d69ed137-f31d-41bf-a580-9d7a8e2c4a29"
     ],
     "filterType": "GMSprite",
     "folderName": "Actors",

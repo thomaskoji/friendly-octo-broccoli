@@ -1,8 +1,8 @@
 {
-    "id": "11077617-96fb-4143-89b0-57eb24a19cfe",
+    "id": "5fd5d277-9cb5-4f36-963d-723fa4cc9b1c",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Macros",
+    "name": "truestate_draw",
     "IsCompatibility": false,
     "IsDnD": false
 }
