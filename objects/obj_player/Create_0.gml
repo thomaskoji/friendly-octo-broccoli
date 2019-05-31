@@ -4,6 +4,7 @@ truestate_system_init();
 
 truestate_create_state(States.wait,player_state_wait,"wait");
 truestate_create_state(States.run,player_state_run,"run");
+truestate_create_state(States.jump,player_state_jump,"run");
 
 truestate_set_default(States.wait);
 

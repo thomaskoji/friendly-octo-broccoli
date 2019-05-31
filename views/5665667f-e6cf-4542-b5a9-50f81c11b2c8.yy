@@ -5,7 +5,8 @@
     "name": "5665667f-e6cf-4542-b5a9-50f81c11b2c8",
     "children": [
         "fa8a58c1-ea7b-4964-88c6-6ca1abe19fda",
-        "9d360f2b-b0b2-41f2-9866-73f1f629689d"
+        "9d360f2b-b0b2-41f2-9866-73f1f629689d",
+        "38c80888-7a76-4e1c-bcac-9079121c1bd4"
     ],
     "filterType": "GMScript",
     "folderName": "Player States",
