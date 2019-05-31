@@ -31,3 +31,4 @@ var _v = down[held]-up[held];
 if(point_distance(0,0,_h,_v) > 0)
 	face_direction=point_direction(0,0,_h,_v);
 else
+	dpad_dir=no_direction;

@@ -23,7 +23,7 @@ var _against_wall=0;
 
 if(_movement_direction==-1 || _move_speed == 0)
 {
-  wall_escape(_wall,1);
+  wall_escape(_wall);
   return false;
 }
 
@@ -153,5 +153,5 @@ if (_hit_wall && _distance_remaining>0)
 }
 
 //Finally, if we are stuck in a wall, break out.  Hopefully this doesn't happen.
-wall_escape(_wall,1);
+wall_escape(_wall);
 return _against_wall;

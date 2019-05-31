@@ -6,5 +6,8 @@ enum States
 	rebound,
 	dodge,
 	slide,
+	jump,
+	fall,
+	attack,
 	enum_size
 }

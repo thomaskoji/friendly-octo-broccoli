@@ -7,17 +7,18 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-
+        "1b66f801-895b-4b1d-90b7-9f146dae9763",
+        "93ca7a7a-3e7c-456d-8a19-8dd47f15b451"
     ],
     "IsDnD": false,
     "layers": [
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Instances",
+            "name": "Player",
             "id": "4e08f47b-75ef-4a6b-9470-d3aaef82817b",
             "depth": 0,
-            "grid_x": 32,
-            "grid_y": 32,
+            "grid_x": 8,
+            "grid_y": 8,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "inheritLayerDepth": false,
@@ -25,7 +26,8 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-
+{"name": "inst_262E07E8","id": "1b66f801-895b-4b1d-90b7-9f146dae9763","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_262E07E8","objId": "9a772599-ca23-46b3-8e17-bc90e48d6272","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 256,"y": 256},
+{"name": "inst_61F05523","id": "93ca7a7a-3e7c-456d-8a19-8dd47f15b451","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_61F05523","objId": "6b6ed321-ee26-4821-b6fe-a1782961c1bb","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 248,"y": 272}
             ],
             "layers": [
 
@@ -43,7 +45,7 @@
             "id": "dbb2eec8-ccfc-43d2-a40f-560a33e94374",
             "animationFPS": 15,
             "animationSpeedType": "0",
-            "colour": { "Value": 4290507252 },
+            "colour": { "Value": 4293256677 },
             "depth": 100,
             "grid_x": 32,
             "grid_y": 32,
@@ -87,12 +89,12 @@
     },
     "roomSettings":     {
         "id": "7e8f1c1d-43d4-40f8-9394-a5f3bf9a0d67",
-        "Height": 108,
+        "Height": 360,
         "inheritRoomSettings": false,
         "modelName": "GMRoomSettings",
         "persistent": false,
         "mvc": "1.0",
-        "Width": 192
+        "Width": 640
     },
     "mvc": "1.0",
     "views": [

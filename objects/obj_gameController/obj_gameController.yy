@@ -1,24 +1,15 @@
 {
-    "id": "41c68bbf-f9fe-4dbd-bf72-a4bbdb2b8682",
+    "id": "3a695771-7156-42c3-9d3e-a57ff34cac4a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_mainController",
+    "name": "obj_gameController",
     "eventList": [
-        {
-            "id": "7a7221f6-d02f-43cc-8e1e-17aa876490da",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "41c68bbf-f9fe-4dbd-bf72-a4bbdb2b8682"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "d4c64dda-5f75-4c83-ba94-be9626504ce9",
-    "persistent": true,
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
