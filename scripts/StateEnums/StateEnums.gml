@@ -5,4 +5,6 @@ enum States
 	run,
 	rebound,
 	dodge,
+	slide,
+	enum_size
 }
