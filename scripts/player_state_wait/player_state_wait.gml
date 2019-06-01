@@ -1,19 +1,13 @@
 //STEP---------------------------------------
 if(argument0==step)
 {
-	
-	if(run[held])
+	if(dpad_dir == east or dpad_dir == west)
 	{
-		truestate_switch(States.run)
-	}
-	
-	if(dpad_dir == east || dpad_dir == west)
-	{
-		truestate_switch(States.run);	
+		truestate_switch(States.run);
 	}
 	if(jump[pressed])
 	{
-		truestate_switch(States.jump);	
+		truestate_switch(States.jump);
 	}
 	if(attack[pressed])
 	{
@@ -22,7 +16,6 @@ if(argument0==step)
 	
 	move_player(0,true,1);
 }
-
 
 //DRAW---------------------------------------
 else if(argument0==draw)

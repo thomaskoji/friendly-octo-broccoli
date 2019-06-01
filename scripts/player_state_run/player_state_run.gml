@@ -1,5 +1,3 @@
-//So, here's your basic state template
-
 //STEP---------------------------------------
 if(argument0==step)
 {
