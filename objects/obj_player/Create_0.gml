@@ -39,3 +39,5 @@ run= [0,0,0];
 jump= [0,0,0];
 
 #endregion
+
+face_direction=1; //1 right, -1 left.

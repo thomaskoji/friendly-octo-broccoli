@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "5734e49a-322b-43bb-b1a5-584fd08b8206",
+            "Value": {
+                "id": "6bde84bb-51a5-43e3-86af-18dfe1071cda",
+                "resourcePath": "objects\\obj_hudController\\obj_hudController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "58a59732-6793-4b12-918d-4fc98c5f238e",
             "Value": {
                 "id": "136e4e9c-3201-4b5c-ab22-b57ea1d1fc58",
