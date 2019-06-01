@@ -17,8 +17,8 @@ move_max_speed		= 3;
 move_friction		= .1;
 move_accel			= move_friction * 2;
 
-jump_power			= 3.5;
-gravity_inc			= .2;
+jump_power			= 5;
+gravity_inc			= .3;
 gravity_max			= 10;
 grace_frames		= 0;
 max_grace_frames	=8;
