@@ -1,5 +1,5 @@
 read_controls();
-truestate_step();
+stateExecute();
 
 x += velocity[XAXIS];
 y += velocity[YAXIS];

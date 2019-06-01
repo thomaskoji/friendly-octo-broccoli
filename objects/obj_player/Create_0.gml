@@ -1,11 +1,10 @@
 #region State Machine
 
-truestate_system_init();
-
-truestate_create_state(States.wait,player_state_wait,"wait");
-truestate_create_state(States.jump,player_state_jump,"run");
-
-truestate_set_default(States.wait);
+stateMachineCreate();
+stateAdd("wait", player_state_wait);
+stateAdd("jump", player_state_jump);
+stateAdd("run", player_state_run);
+stateBeginIn("wait");
 
 #endregion
 
@@ -39,3 +38,5 @@ attack = [0,0,0];
 jump= [0,0,0];
 
 #endregion
+
+currentSprite = spr_playerWait;

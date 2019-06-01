@@ -5,17 +5,17 @@ if(argument0==step)
 	if((velocity[XAXIS] < -_spd_for_slide && dpad_dir==east) || 
 		 (velocity[YAXIS] > _spd_for_slide && dpad_dir==west))
 	{
-		truestate_switch(States.slide);
+		stateSwitch(States.slide);
 	}
 	move_player(1,true,1);
 	
 	if(jump[pressed])
 	{
-		truestate_switch(States.jump);
+		stateSwitch(States.jump);
 	}
 	if(velocity[XAXIS] == 0 && dpad_dir == no_direction)
 	{
-		truestate_switch(States.wait);
+		stateSwitch(States.wait);
 		state_var[0] = true;
 		exit;
 	}
