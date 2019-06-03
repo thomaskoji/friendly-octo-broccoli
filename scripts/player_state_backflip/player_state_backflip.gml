@@ -2,7 +2,7 @@ var _startY = y;
 if (state_new)
 {
 	velocity[YAXIS] -= jump_power;
-	sprite_index = spr_playerJump;
+	sprite_index = spr_playerBackflip;
 }
 
 //about to touch ground

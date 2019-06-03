@@ -3,7 +3,10 @@
 stateMachineCreate();
 stateAdd("wait", player_state_wait);
 stateAdd("jump", player_state_jump);
+stateAdd("backflip", player_state_backflip);
 stateAdd("run", player_state_run);
+stateAdd("slide", player_state_slide);
+stateAdd("fall", player_state_fall);
 stateBeginIn("wait");
 
 #endregion
@@ -18,7 +21,7 @@ move_friction		= .1;
 move_accel			= move_friction * 2;
 
 jump_power			= 5;
-gravity_inc			= .3;
+gravity_inc			= .1;
 gravity_max			= 10;
 grace_frames		= 0;
 max_grace_frames	=8;
@@ -38,5 +41,3 @@ attack		= [0,0,0];
 jump		= [0,0,0];
 
 #endregion
-
-currentSprite = spr_playerWait;

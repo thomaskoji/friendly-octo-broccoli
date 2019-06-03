@@ -35,4 +35,6 @@ else
 	grace_frames -= grace_frames > 0;
 y+=velocity[YAXIS];
 
+velocity[YAXIS] += gravity_inc;
+
 wall_escape(_solid_parent);
