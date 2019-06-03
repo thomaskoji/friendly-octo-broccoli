@@ -1,12 +1,9 @@
-// x += velocity[XAXIS];
-// y += velocity[YAXIS];
-// velocity[YAXIS] += gravity_inc;
+
+
+velocity[XAXIS] += (right[held]-left[held])*(move_accel);
+velocity[XAXIS]=clamp(velocity[XAXIS],-move_max_speed,move_max_speed);
 
 against_wall = [0,0];
-//Horizontal
-velocity[XAXIS] += (right[held]-left[held])*(move_accel);
-
-velocity[XAXIS]=clamp(velocity[XAXIS],-move_max_speed,move_max_speed);
 if(place_meeting(round(x)+ceil_signed(velocity[XAXIS]),round(y),_solid_parent))
 {
 	round_position();
