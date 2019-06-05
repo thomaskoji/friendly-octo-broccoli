@@ -29,12 +29,7 @@ if(place_meeting(round(x),round(y)+ceil_signed(velocity[YAXIS]),_solid_parent))
 		y+=sign(velocity[YAXIS]);	
 	against_wall[1]=sign(velocity[YAXIS]);
 	velocity[YAXIS]=0;
-	grace_frames=max_grace_frames;
 }
-else
-	grace_frames -= grace_frames > 0;
 y+=velocity[YAXIS];
 
 velocity[YAXIS] += gravity_inc;
-
-wall_escape(_solid_parent);

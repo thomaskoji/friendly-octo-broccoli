@@ -1,31 +1,35 @@
+// my version of move_player 
+
 velocity[XAXIS] += (right[held]-left[held])*(move_accel);
 velocity[XAXIS] = clamp(velocity[XAXIS],-move_max_speed,move_max_speed);
-
-//Horizontal Collisions
-if (place_meeting(x+velocity[XAXIS],y,_solid_parent)){
-    //Up slope
-    var yplus=0;
-    while(place_meeting(x+velocity[XAXIS],y-yplus,_solid_parent)&&yplus<=abs(velocity[XAXIS])) yplus+=1; //change the abs(velocity[XAXIS]) to 3*abs(velocity[XAXIS]) if you want to be able to go up a 3-1 slope, etc..
-    if(place_meeting(x+velocity[XAXIS],y-yplus,_solid_parent)){
-        while(!place_meeting(x+sign(velocity[XAXIS]),y,_solid_parent)) x += sign(velocity[XAXIS]);
-        velocity[XAXIS]=0;
-    }else{
-        y-=yplus;
+/*a
+// Vertical
+repeat(abs(velocity[YAXIS])) {
+    if (!place_meeting(x, y + sign(velocity[YAXIS]), _solid_parent))
+        x+=velocity[XAXIS];
+    else {
+        velocity[YAXIS] = 0;
+        break;
     }
 }
-x += velocity[XAXIS];
+// Horizontal
+repeat(abs(velocity[XAXIS])) {
 
-//Down slope
-if !place_meeting(x,y,_solid_parent) && velocity[YAXIS] >= 0 && place_meeting(x,y+2+abs(velocity[XAXIS]),_solid_parent){
-    while(!place_meeting(x,y+1,_solid_parent)) y += 1;
-}
+    // Move up slope
+    if (place_meeting(x + sign(velocity[XAXIS]), y, _solid_parent) && !place_meeting(x + sign(velocity[XAXIS]), y - 2, _solid_parent))
+        --y;
+    
+    // Move down slope
+    if (!place_meeting(x + sign(velocity[XAXIS]), y, _solid_parent) && !place_meeting(x + sign(velocity[XAXIS]), y + 2, _solid_parent) && place_meeting(x + sign(velocity[XAXIS]), y + 2, _solid_parent))
+        ++y; 
 
-//Vertical Collisions
-if (place_meeting(x,y+velocity[YAXIS],_solid_parent)){
-    while(!place_meeting(x,y+sign(velocity[YAXIS]),_solid_parent)) y += sign(velocity[YAXIS]);
-    velocity[YAXIS]=0;
+    if (!place_meeting(x + sign(velocity[XAXIS]), y, _solid_parent))
+        y+=velocity[YAXIS];
+    else {
+        velocity[XAXIS] = 0;
+        break;
+    }
 }
-y+=velocity[YAXIS];
 
 
 /*

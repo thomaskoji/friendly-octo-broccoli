@@ -23,8 +23,8 @@ move_accel			= move_friction * 2;
 jump_power			= 5;
 gravity_inc			= .1;
 gravity_max			= 10;
-grace_frames		= 0;
-max_grace_frames	=8;
+grace_frames		= 0; //delete these from this project
+max_grace_frames	=8;	//delete these from this project
 
 face_direction		=1; //1 right, -1 left.
 
