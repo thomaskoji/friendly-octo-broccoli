@@ -12,5 +12,3 @@ if (y + velocity[YAXIS]/2 >= _startY)
 	velocity[YAXIS] = 0;
 	stateSwitch("wait");
 }
-
-move_player(.35,false,1);

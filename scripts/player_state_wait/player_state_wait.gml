@@ -1,6 +1,6 @@
 sprite_index = spr_playerWait;
 
-if(dpad_dir == east or dpad_dir == west)
+if(global.inputHorizontalTotal != 0)
 {
 	stateSwitch("run");
 }
@@ -8,5 +8,3 @@ if(keyboard_check_pressed(vk_space))
 {
 	stateSwitch("jump");
 }
-
-move_player(0,true,1);

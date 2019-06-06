@@ -119,14 +119,6 @@
             }
         },
         {
-            "Key": "283bae1f-68b7-43fb-b8fc-ad6959a46c9b",
-            "Value": {
-                "id": "381359b8-dd3e-4ff9-a0b7-bd5f7228bae7",
-                "resourcePath": "scripts\\add_velocity\\add_velocity.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "2a807607-8cea-4391-9260-1360d49fc02a",
             "Value": {
                 "id": "aaf58aa7-01b8-44a9-9f22-8db13b96bec3",
@@ -196,14 +188,6 @@
                 "id": "b9eb8851-c072-41e6-8762-a2b7a2d896f9",
                 "resourcePath": "objects\/obj_gameController\/obj_gameController.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "3dc99a3c-9cb4-4572-8f70-c5bc49c1d47f",
-            "Value": {
-                "id": "27f1f8c7-312f-4886-9933-cdfdea23bb13",
-                "resourcePath": "scripts\/move_player\/move_player.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -404,14 +388,6 @@
                 "id": "b7551218-2d11-4deb-a313-12e442f84956",
                 "resourcePath": "rooms\/rm_test\/rm_test.yy",
                 "resourceType": "GMRoom"
-            }
-        },
-        {
-            "Key": "6ad7e09f-d323-4a6b-a34f-67cd0bb9a845",
-            "Value": {
-                "id": "963b452d-45fc-49ef-a50f-f09f79650cea",
-                "resourcePath": "scripts\/StateEnums\/StateEnums.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -767,14 +743,6 @@
             }
         },
         {
-            "Key": "e3cd7617-653f-4872-bb00-24331009edc8",
-            "Value": {
-                "id": "0bb50743-19c6-4faa-af9d-7dfabbe81c63",
-                "resourcePath": "scripts\/read_controls\/read_controls.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "e8af542b-165c-44dc-a0b5-b73b95e2d243",
             "Value": {
                 "id": "a4afc244-1f7b-41ab-a623-fee7d5bffdcc",
@@ -840,7 +808,6 @@
         }
     ],
     "script_order": [
-        "6ad7e09f-d323-4a6b-a34f-67cd0bb9a845",
         "11077617-96fb-4143-89b0-57eb24a19cfe",
         "a61154db-c5e1-4adc-b2d8-abc5b448f99f",
         "59db5d6f-4fdd-4c22-9f32-55a74fab1b92",
@@ -859,10 +826,7 @@
         "2c9158f0-94ad-4c32-970a-819f559a1718",
         "441cc19a-88ad-4591-a2ee-cc46cc24e766",
         "c80093e1-c1d5-4ddf-a758-8997d6987195",
-        "3dc99a3c-9cb4-4572-8f70-c5bc49c1d47f",
-        "e3cd7617-653f-4872-bb00-24331009edc8",
         "67738a78-8eec-42bd-9ce3-5b19eb9d6642",
-        "283bae1f-68b7-43fb-b8fc-ad6959a46c9b",
         "858c289a-6456-488a-886c-c90452494a2f",
         "2bc95fd9-e53a-474e-a4e9-2aede5ceb001",
         "5ce583fd-292c-4667-89c1-155c53cbf379",

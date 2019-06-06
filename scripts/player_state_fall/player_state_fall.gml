@@ -1,6 +1,3 @@
-
-move_player(.25,false,1);
-
 if(against_wall[1])
 {
 	if(velocity[XAXIS] == 0)

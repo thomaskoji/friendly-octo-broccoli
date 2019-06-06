@@ -1,2 +1,1 @@
-read_controls();
 stateExecute();
