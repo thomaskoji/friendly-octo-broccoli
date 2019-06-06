@@ -6,22 +6,21 @@ if(state_new)
 		{face_direction = sign(velocity[XAXIS]);}
 }
 
-//STEP---------------------------------------ddd
-var _spd_for_slide=1.75;
+scr_applyXMovement(global.inputHorizontalTotal, runAccel, runMaxSpeed, runFriction);
+
+var _spd_for_slide = 1.75;
 if((velocity[XAXIS] < -_spd_for_slide && global.inputHorizontalTotal == 1) || 
 	 (velocity[XAXIS] > _spd_for_slide && global.inputHorizontalTotal == -1))
-{
+{ 
 	stateSwitch("slide");
 }
-/*
-if(jump[pressed])
+
+if(global.inputSpacePressed)
 {
 	stateSwitch("jump");
 }
-*/
+
 if(velocity[XAXIS] == 0 && global.inputHorizontalTotal == 0)
 {
 	stateSwitch("wait");
-	state_var[0] = true;
-	exit;
 }

@@ -16,14 +16,16 @@ stateBeginIn("wait");
 velocity[YAXIS]		= 0;
 velocity[XAXIS]		= 0;
 
-move_max_speed		= 3;
-move_friction		= .1;
-move_accel			= move_friction * 2;
+runMaxSpeed			= 2;
+runFriction			= .1;
+runAccel			= .2;
 
 jump_power			= 5;
 gravity_inc			= .1;
-gravity_max			= 10;
+gravity_max			= 5;
 
 face_direction		=1; //1 right, -1 left.
+
+touchingGround		= false;
 
 #endregion

@@ -16,4 +16,18 @@ global.inputRightPressed	= keyboard_check_pressed(rightKey);
 global.inputRightHeld		= keyboard_check(rightKey);
 global.inputRightReleased	= keyboard_check_released(rightKey);
 
+global.inputSpacePressed	= keyboard_check_pressed(spaceKey);
+global.inputSpaceHeld		= keyboard_check(spaceKey);
+global.inputSpaceReleased	= keyboard_check_released(spaceKey);
+
+global.inputShiftPressed	= keyboard_check_pressed(shiftKey);
+global.inputShiftHeld		= keyboard_check(shiftKey);
+global.inputShiftReleased	= keyboard_check_released(shiftKey);
+
 global.inputHorizontalTotal = global.inputRightHeld - global.inputLeftHeld;
+global.inputVerticalTotal	= global.inputUpHeld - global.inputDownHeld;
+
+if(point_distance(0,0,global.inputHorizontalTotal,global.inputVerticalTotal) > 0)
+	global.inputDirection = point_direction(0,0,global.inputHorizontalTotal,global.inputVerticalTotal);
+else
+	global.inputDirection = no_direction;

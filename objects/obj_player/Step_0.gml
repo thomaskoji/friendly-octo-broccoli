@@ -1,1 +1,3 @@
 stateExecute();
+
+scr_objectUpdateLocation(); 

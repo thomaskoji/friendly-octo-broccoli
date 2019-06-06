@@ -1,3 +1,5 @@
+#macro NULLVALUE -99999
+
 //Velocity
 #macro XAXIS 0
 #macro YAXIS 1

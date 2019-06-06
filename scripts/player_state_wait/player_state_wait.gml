@@ -1,4 +1,9 @@
-sprite_index = spr_playerWait;
+if ( state_new )
+{
+	sprite_index = spr_playerWait;
+}
+
+scr_applyXFriction(runFriction);
 
 if(global.inputHorizontalTotal != 0)
 {
