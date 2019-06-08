@@ -9,8 +9,8 @@ if(state_new)
 scr_applyXMovement(global.inputHorizontalTotal, runAccel, runMaxSpeed, runFriction);
 
 var _spd_for_slide = 1.75;
-if((velocity[XAXIS] < -_spd_for_slide && global.inputHorizontalTotal == 1) || 
-	 (velocity[XAXIS] > _spd_for_slide && global.inputHorizontalTotal == -1))
+if((velocity[XAXIS] < -_spd_for_slide && global.inputDirection == east) || 
+	 (velocity[XAXIS] > _spd_for_slide && global.inputDirection == west))
 { 
 	stateSwitch("slide");
 }

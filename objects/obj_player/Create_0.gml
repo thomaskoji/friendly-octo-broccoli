@@ -20,8 +20,8 @@ runMaxSpeed			= 2;
 runFriction			= .1;
 runAccel			= .2;
 
-jump_power			= 5;
-gravity_inc			= .1;
+jump_power			= 4;
+gravity_inc			= .2;
 gravity_max			= 5;
 
 face_direction		=1; //1 right, -1 left.
