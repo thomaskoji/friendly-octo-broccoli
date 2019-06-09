@@ -1,8 +1,8 @@
 {
-    "id": "520c2df9-5863-4d92-bf74-113ac17af051",
+    "id": "7b94bbe0-f301-459e-8317-214d1cde713e",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "player_state_slide",
+    "name": "player_state_attackAirUp",
     "IsCompatibility": false,
     "IsDnD": false
 }
