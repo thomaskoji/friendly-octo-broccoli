@@ -10,7 +10,7 @@ var _spdForSlide = .1;
 if((velocity[XAXIS] < -_spdForSlide && global.inputDirection == east) || 
 	 (velocity[XAXIS] > _spdForSlide && global.inputDirection == west))
 { 
-	stateSwitch("slide");
+	stateSwitch("brake");
 }
 
 scr_applyXMovement(global.inputHorizontalTotal, runAccel, runMaxSpeed, runFriction);
