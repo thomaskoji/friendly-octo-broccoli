@@ -1,6 +1,7 @@
 #region State Machine
 
 stateMachineCreate();
+
 stateAdd("wait", player_state_wait);
 stateAdd("run", player_state_run);
 stateAdd("brake", player_state_brake);
@@ -17,6 +18,7 @@ stateAdd("attackGroundUp", player_state_attackGroundUp);
 stateAdd("attackGroundDown", player_state_attackGroundDown);
 stateAdd("attackAirUp", player_state_attackAirUp);
 stateAdd("attackAirDown", player_state_attackAirDown);
+
 stateBeginIn("wait");
 
 #endregion
