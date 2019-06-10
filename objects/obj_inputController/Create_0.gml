@@ -6,6 +6,9 @@ leftKey		= ord("A");
 rightKey	= ord("D");
 spaceKey	= vk_space;
 shiftKey	= vk_shift;
+controlKey	= vk_control;
+mouseLeft	= mb_left;
+mouseRight	= mb_right;
 
 global.inputDirection		= no_direction;
 
@@ -32,3 +35,15 @@ global.inputSpaceReleased	= false;
 global.inputShiftPressed	= false;
 global.inputShiftHeld		= false;
 global.inputShiftReleased	= false;
+
+global.inputControlPressed	= false;
+global.inputControlHeld		= false;
+global.inputControlReleased	= false;
+
+global.inputMouseLeftPressed	= false;
+global.inputMouseLeftHeld		= false;
+global.inputMouseLeftReleased	= false;
+
+global.inputMouseRightPressed	= false;
+global.inputMouseRightHeld		= false;
+global.inputMouseRightReleased	= false;

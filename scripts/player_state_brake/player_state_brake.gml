@@ -1,7 +1,7 @@
 if(state_new)
 {
 	state_var[0] = sign(velocity[XAXIS]); //Starting direction when entering the slide
-	sprite_index = spr_playerSlide;
+	sprite_index = spr_playerBrake;
 	face_direction = state_var[0];
 }
 

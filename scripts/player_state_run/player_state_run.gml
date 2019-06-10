@@ -20,6 +20,21 @@ if(global.inputSpacePressed)
 	stateSwitch("jump");
 }
 
+if(global.inputControlPressed)
+{
+	stateSwitch("Slide");
+}
+
+if(global.inputMouseLeftPressed)
+{
+	stateSwitch("attackA");
+}
+
+if(global.inputMouseRightPressed)
+{
+	stateSwitch("attackHeavyA");
+}
+
 if(velocity[XAXIS] == 0 && global.inputHorizontalTotal == 0)
 {
 	stateSwitch("wait");

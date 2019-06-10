@@ -2,7 +2,7 @@
     "id": "194adc38-db15-4b46-840d-a4ae714af34a",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_playerSlide",
+    "name": "spr_playerBrake",
     "For3D": false,
     "HTile": false,
     "VTile": false,
