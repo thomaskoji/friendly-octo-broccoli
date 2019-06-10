@@ -1,9 +1,9 @@
 if(state_new)
 {
-	sprite_index = spr_playerCrouch;
+	sprite_index = spr_playerCrouchWalk;
 }
 
-scr_applyXFriction(crouchFriction);
+scr_applyXMovement(global.inputHorizontalTotal, crouchAccel, crouchMaxSpeed, crouchFriction);
 
 #region state machine
 
@@ -22,9 +22,9 @@ if(global.inputSpacePressed)
 	stateSwitch("jump");
 }
 
-if(global.inputControlHeld && global.inputHorizontalTotal != 0)
+if(global.inputControlHeld && global.inputHorizontalTotal = 0)
 {
-	stateSwitch("crouchWalk");
+	stateSwitch("crouch");
 }
 
 #endregion

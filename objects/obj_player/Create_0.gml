@@ -10,6 +10,7 @@ stateAdd("backflip", player_state_backflip);
 stateAdd("fall", player_state_fall);
 stateAdd("slide", player_state_slide);
 stateAdd("crouch", player_state_crouch);
+stateAdd("crouchWalk", player_state_crouchWalk);
 stateAdd("attackA", player_state_attackA);
 stateAdd("attackB", player_state_attackB);
 stateAdd("attackC", player_state_attackC);
@@ -35,6 +36,10 @@ velocity[XAXIS]		= 0;
 runMaxSpeed			= 2;
 runFriction			= .15;
 runAccel			= .1;
+
+crouchMaxSpeed		= 1;
+crouchFriction		= .15;
+crouchAccel			= .1;
 
 jump_power			= 4;
 gravity_inc			= .2;

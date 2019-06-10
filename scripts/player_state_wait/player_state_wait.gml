@@ -5,11 +5,26 @@ if ( state_new )
 
 scr_applyXFriction(runFriction);
 
-if(global.inputHorizontalTotal != 0)
+#region state machine
+
+if(global.inputHorizontalTotal != 0 && !global.inputControlPressed)
 {
 	stateSwitch("run");
 }
-if(keyboard_check_pressed(vk_space))
+
+if(global.inputSpacePressed)
 {
 	stateSwitch("jump");
 }
+
+if(global.inputControlPressed)
+{
+	stateSwitch("crouch");
+}
+
+if(global.inputControlPressed && global.inputHorizontalTotal != 0)
+{
+	stateSwitch("crouchWalk");
+}
+
+#endregion
