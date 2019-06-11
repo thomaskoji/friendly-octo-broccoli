@@ -9,6 +9,7 @@ stateAdd("jump", player_state_jump);
 stateAdd("backflip", player_state_backflip);
 stateAdd("fall", player_state_fall);
 stateAdd("slide", player_state_slide);
+stateAdd("slideAttack", player_state_slideAttack);
 stateAdd("crouch", player_state_crouch);
 stateAdd("crouchWalk", player_state_crouchWalk);
 stateAdd("attackA", player_state_attackA);
@@ -40,6 +41,8 @@ runAccel			= .1;
 crouchMaxSpeed		= 1;
 crouchFriction		= .08;
 crouchAccel			= .08;
+
+slideFriction		= .03;
 
 jump_power			= 4;
 gravity_inc			= .2;

@@ -1,4 +1,4 @@
-if ( state_new )
+if(state_new)
 {
 	sprite_index = spr_playerWait;
 }
@@ -25,6 +25,11 @@ if(global.inputControlHeld)
 if(global.inputControlPressed && global.inputHorizontalTotal != 0)
 {
 	stateSwitch("crouchWalk");
+}
+
+if(velocity[YAXIS] > 0)
+{
+	stateSwitch("fall");
 }
 
 #endregion

@@ -1,9 +1,13 @@
-if(against_wall[1])
+if(state_new)
 {
-	if(velocity[XAXIS] == 0)
-		{stateSwitch("wait");}
-	else
-		{stateSwitch("slide");}
+	sprite_index=spr_playerFall;
 }
 
-sprite_index=spr_playerFall;
+#region state machine
+
+if(velocity[YAXIS] == 0)
+{
+	stateSwitch("wait");
+}
+
+#endregion
