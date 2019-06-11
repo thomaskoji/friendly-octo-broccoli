@@ -17,7 +17,7 @@ if(global.inputSpacePressed)
 	stateSwitch("jump");
 }
 
-if(global.inputControlPressed)
+if(global.inputControlHeld)
 {
 	stateSwitch("crouch");
 }

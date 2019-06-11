@@ -38,15 +38,13 @@ runFriction			= .15;
 runAccel			= .1;
 
 crouchMaxSpeed		= 1;
-crouchFriction		= .15;
-crouchAccel			= .1;
+crouchFriction		= .08;
+crouchAccel			= .08;
 
 jump_power			= 4;
 gravity_inc			= .2;
 gravity_max			= 5;
 
-face_direction		=1; //1 right, -1 left.
-
-touchingGround		= false;
+face_direction		=1; //1 right, -1 left.p
 
 #endregion
