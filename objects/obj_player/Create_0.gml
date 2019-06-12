@@ -47,6 +47,7 @@ slideFriction		= .03;
 jump_power			= 4;
 gravity_inc			= .2;
 gravity_max			= 5;
+jumped				= false;
 
 face_direction		=1; //1 right, -1 left.p
 

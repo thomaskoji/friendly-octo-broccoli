@@ -1,6 +1,6 @@
 if(state_new)
 {
-	sprite_index = spr_playerSlide;
+	sprite_index = spr_playerSlideAttack;
 }
 
 scr_applyXFriction(slideFriction);

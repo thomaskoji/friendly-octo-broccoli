@@ -7,9 +7,14 @@ scr_applyXFriction(slideFriction);
 
 #region state machine
 
-if(!global.inputControlHeld || velocity[XAXIS] == 0 && global.inputHorizontalTotal == 0)
+if(velocity[XAXIS] == 0)
 {
 	stateSwitch("wait");
+}
+
+if(velocity[XAXIS] == 0 && global.inputHorizontalTotal != 0)
+{
+	stateSwitch("run");
 }
 
 if(global.inputSpacePressed)

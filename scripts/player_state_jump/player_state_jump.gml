@@ -1,16 +1,14 @@
-var _startY = y;
-if(state_new)
+if(state_new && !jumped)
 {
 	velocity[YAXIS] -= jump_power;
 	sprite_index = spr_playerJump;
+	jumped = true;
 }
 
 scr_applyXMovement(global.inputHorizontalTotal, runAccel, runMaxSpeed, runFriction);
 
-//about to touch ground
-if(y + velocity[YAXIS]/2 >= _startY)
+if(velocity[YAXIS] > 0)
 {
-	y = _startY;
-	velocity[YAXIS] = 0;
-	stateSwitch("wait");
+	stateSwitch("fall");
+	jumped = false;
 }
