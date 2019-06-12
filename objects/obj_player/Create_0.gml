@@ -36,13 +36,13 @@ velocity[XAXIS]		= 0;
 
 runMaxSpeed			= 1;
 runFriction			= 0.05;
-runAccel			= 0.05;
+runAccel			= 0.03;
 
 crouchMaxSpeed		= 0.5;
-crouchFriction		= 0.08;
-crouchAccel			= 0.08;
+crouchFriction		= 0.02;
+crouchAccel			= 0.02;
 
-slideFriction		= 0.03;
+slideFriction		= 0.02;
 
 jump_power			= 1.8;
 gravity_inc			= 0.1;
