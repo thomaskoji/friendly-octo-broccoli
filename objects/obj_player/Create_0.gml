@@ -34,21 +34,28 @@ stateBeginIn("wait");
 velocity[YAXIS]		= 0;
 velocity[XAXIS]		= 0;
 
-runMaxSpeed			= 2;
-runFriction			= .15;
-runAccel			= .1;
+runMaxSpeed			= 1;
+runFriction			= 0.05;
+runAccel			= 0.05;
 
-crouchMaxSpeed		= 1;
-crouchFriction		= .08;
-crouchAccel			= .08;
+crouchMaxSpeed		= 0.5;
+crouchFriction		= 0.08;
+crouchAccel			= 0.08;
 
-slideFriction		= .03;
+slideFriction		= 0.03;
 
-jump_power			= 4;
-gravity_inc			= .2;
-gravity_max			= 5;
+jump_power			= 1.8;
+gravity_inc			= 0.1;
+gravity_max			= 2;
 jumped				= false;
 
 face_direction		=1; //1 right, -1 left.p
+
+#endregion
+
+#region Image Properties
+
+waitImageSpeed		= 0.1;
+runImageSpeed		= 0.25;
 
 #endregion

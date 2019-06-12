@@ -1,5 +1,6 @@
 if(state_new)
 {
+	image_speed = runImageSpeed;
 	sprite_index = spr_playerRun
 }
 
@@ -11,7 +12,7 @@ scr_applyXMovement(global.inputHorizontalTotal, runAccel, runMaxSpeed, runFricti
 #region state machine
 
 
-var _spdForSlide = .1;
+var _spdForSlide = .01;
 if((velocity[XAXIS] < -_spdForSlide && global.inputDirection == east) || 
 	 (velocity[XAXIS] > _spdForSlide && global.inputDirection == west))
 { 
@@ -41,6 +42,11 @@ if(global.inputMouseRightPressed)
 if(velocity[XAXIS] == 0 && global.inputHorizontalTotal == 0)
 {
 	stateSwitch("wait");
+}
+
+if(velocity[YAXIS] > 0)
+{
+	stateSwitch("fall");
 }
 
 #endregion

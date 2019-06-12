@@ -1,5 +1,6 @@
 if(state_new)
 {
+	image_speed = waitImageSpeed;
 	sprite_index = spr_playerWait;
 }
 
