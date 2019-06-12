@@ -25,7 +25,7 @@ if(global.inputSpacePressed)
 
 if(global.inputControlPressed)
 {
-	stateSwitch("Slide");
+	stateSwitch("slide");
 }
 /*
 if(global.inputMouseLeftPressed)
