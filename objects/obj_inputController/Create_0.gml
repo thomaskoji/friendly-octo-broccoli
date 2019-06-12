@@ -1,14 +1,13 @@
 event_inherited();
 
-upKey		= ord("W");
-downKey		= ord("S");
-leftKey		= ord("A");
-rightKey	= ord("D");
+upKey		= vk_up;
+downKey		= vk_down;
+leftKey		= vk_left;
+rightKey	= vk_right;
 spaceKey	= vk_space;
 shiftKey	= vk_shift;
 controlKey	= vk_control;
-mouseLeft	= mb_left;
-mouseRight	= mb_right;
+EKey		= ord("E");
 
 global.inputDirection		= no_direction;
 
