@@ -13,11 +13,6 @@ if(global.inputHorizontalTotal != 0 && !global.inputControlPressed)
 	stateSwitch("run");
 }
 
-if(global.inputSpacePressed)
-{
-	stateSwitch("jump");
-}
-
 if(global.inputControlHeld)
 {
 	stateSwitch("crouch");
@@ -28,9 +23,14 @@ if(global.inputControlPressed && global.inputHorizontalTotal != 0)
 	stateSwitch("crouchWalk");
 }
 
-if(velocity[YAXIS] > 0)
+if(!onGround)
 {
 	stateSwitch("fall");
+}
+
+if(global.inputSpacePressed)
+{
+	stateSwitch("jump");
 }
 
 #endregion

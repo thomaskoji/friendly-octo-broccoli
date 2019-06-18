@@ -19,11 +19,6 @@ if((velocity[XAXIS] < -_spdForSlide && global.inputDirection == east) ||
 	stateSwitch("brake");
 }
 
-if(global.inputSpacePressed)
-{
-	stateSwitch("jump");
-}
-
 if(global.inputControlPressed)
 {
 	stateSwitch("slide");
@@ -44,9 +39,14 @@ if(velocity[XAXIS] == 0 && global.inputHorizontalTotal == 0)
 	stateSwitch("wait");
 }
 
-if(velocity[YAXIS] > 0)
+if(!onGround)
 {
 	stateSwitch("fall");
+}
+
+if(global.inputSpacePressed)
+{
+	stateSwitch("jump");
 }
 
 #endregion

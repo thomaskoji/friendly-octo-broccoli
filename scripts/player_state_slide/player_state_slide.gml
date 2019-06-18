@@ -17,14 +17,20 @@ if(velocity[XAXIS] == 0 && global.inputHorizontalTotal != 0)
 	stateSwitch("run");
 }
 
+if(global.inputMouseLeftPressed || global.inputMouseRightPressed)
+{
+	stateSwitch("slideAttack");
+}
+
+if(!onGround)
+{
+	stateSwitch("fall");
+}
+
 if(global.inputSpacePressed)
 {
 	stateSwitch("jump");
 }
 
-if(global.inputMouseLeftPressed || global.inputMouseRightPressed)
-{
-	stateSwitch("slideAttack");
-}
 
 #endregion

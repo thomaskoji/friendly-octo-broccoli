@@ -3,6 +3,8 @@ if(state_new)
 	sprite_index=spr_playerFall;
 }
 
+scr_applyGravity();
+
 scr_applyXMovement(global.inputHorizontalTotal, runAccel, runMaxSpeed, runFriction);
 
 #region state machine

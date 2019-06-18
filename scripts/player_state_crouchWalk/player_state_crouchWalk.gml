@@ -17,14 +17,19 @@ if(global.inputHorizontalTotal != 0 && !global.inputControlHeld)
 	stateSwitch("run");
 }
 
+if(global.inputControlHeld && global.inputHorizontalTotal = 0)
+{
+	stateSwitch("crouch");
+}
+
 if(global.inputSpacePressed)
 {
 	stateSwitch("jump");
 }
 
-if(global.inputControlHeld && global.inputHorizontalTotal = 0)
+if(global.inputSpacePressed)
 {
-	stateSwitch("crouch");
+	stateSwitch("jump");
 }
 
 #endregion

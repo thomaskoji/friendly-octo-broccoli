@@ -1,9 +1,12 @@
 if(state_new && !jumped)
 {
-	velocity[YAXIS] -= jump_power;
+	image_speed = 0.5;
 	sprite_index = spr_playerBackflip;
+	velocity[YAXIS] -= jump_power;
 	jumped = true;
 }
+
+scr_applyGravity();
 
 scr_applyXMovement(global.inputHorizontalTotal, runAccel, runMaxSpeed, runFriction);
 

@@ -1,9 +1,3 @@
-//gravity
-if(velocity[YAXIS] < gravity_max)
-{
-	velocity[YAXIS] += gravity_inc;
-}
-
 //horizontal
 if(place_meeting(x + velocity[XAXIS], y, _solid_parent))
 {
@@ -31,6 +25,9 @@ x += velocity[XAXIS];
 //vertical
 if(place_meeting(x, y + velocity[YAXIS], _solid_parent))
 {
+	if (velocity[YAXIS] < 0) { y = ceil(y);}
+	else if (velocity[YAXIS] > 0) { y = floor(y);}
+	
 	while(!place_meeting(x, y + sign(velocity[YAXIS]), _solid_parent))
 	{
 		y += sign(velocity[YAXIS]);

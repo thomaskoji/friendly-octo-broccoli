@@ -44,10 +44,11 @@ crouchAccel			= 0.02;
 
 slideFriction		= 0.02;
 
-jump_power			= 1.8;
-gravity_inc			= 0.1;
-gravity_max			= 2;
+jump_power			= 1.5;
+gravity_inc			= 0.05;
+gravity_max			= 1 ;
 jumped				= false;
+onGround			= false;
 
 face_direction		=1; //1 right, -1 left.p
 

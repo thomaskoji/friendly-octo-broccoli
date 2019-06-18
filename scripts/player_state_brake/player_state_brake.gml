@@ -17,6 +17,11 @@ if(_changed_direction || _slide_cancelled)
 	stateSwitch("run");
 }
 
+if(!onGround)
+{
+	stateSwitch("fall");
+}
+
 if(global.inputSpacePressed)
 {
 	stateSwitch("backflip");

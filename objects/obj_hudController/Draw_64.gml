@@ -48,10 +48,11 @@ switch global.inputDirection
 var _debugString = "";
 _debugString += "FPS " + string(fps) + "\n";
 _debugString += "State " + string(obj_player.state) + "\n";
-_debugString += "X " + string(x) + "\n";
-_debugString += "Y " + string(y) + "\n";
+_debugString += "X " + string(obj_player.x) + "\n";
+_debugString += "Y " + string(obj_player.y) + "\n";
 _debugString += "Xvel " + string(obj_player.velocity[XAXIS]) + "\n";
 _debugString += "Yvel " + string(obj_player.velocity[YAXIS]) + "\n";
+_debugString += "onGround " + string(obj_player.onGround) + "\n";
 _debugString += _dir + "\n";
 
 draw_text(5,5, _debugString);
