@@ -1,7 +1,7 @@
 if(state_new)
 {
 	image_speed = runImageSpeed;
-	sprite_index = spr_playerRun
+	sprite_index = spr_playerRun;
 }
 
 if(velocity[XAXIS] != 0)
