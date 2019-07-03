@@ -1,9 +1,9 @@
 event_inherited();
 
-upKey		= vk_up;
-downKey		= vk_down;
-leftKey		= vk_left;
-rightKey	= vk_right;
+upKey		= ord("W");
+downKey		= ord("S");
+leftKey		= ord("A");
+rightKey	= ord("D");
 spaceKey	= vk_space;
 shiftKey	= vk_shift;
 controlKey	= vk_control;

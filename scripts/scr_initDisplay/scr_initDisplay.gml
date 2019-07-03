@@ -2,7 +2,7 @@
 
 // set base ideal width/height
 ideal_width = 0;
-ideal_height = 108;
+ideal_height = 360;
 zoom = 1;
 
 // calculate display aspect ratio
