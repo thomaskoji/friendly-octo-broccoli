@@ -1,5 +1,8 @@
 persistent = true;
-visible = false;
+if(object_index != obj_hudController)
+{
+	visible = false;
+}
 
 if(instance_number(object_index) > 1)
 {

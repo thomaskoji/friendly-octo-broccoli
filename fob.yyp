@@ -743,6 +743,14 @@
             }
         },
         {
+            "Key": "a9975bb1-bfbf-45de-bd60-5d702c5cacd4",
+            "Value": {
+                "id": "7d11e588-a26a-4884-893a-20ec3fa69f18",
+                "resourcePath": "scripts\\scr_updateStats\\scr_updateStats.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "aa63316e-238d-454e-8fc9-9cc3ba73bd0b",
             "Value": {
                 "id": "78b69cd2-58c8-46e9-9283-e3059b4404e8",
@@ -1138,6 +1146,7 @@
         "7b94bbe0-f301-459e-8317-214d1cde713e",
         "25db51b9-8ae2-4ee9-83a7-e9dad7267c06",
         "6c753a5b-b98d-4958-a94e-429424664c74",
+        "a9975bb1-bfbf-45de-bd60-5d702c5cacd4",
         "858c289a-6456-488a-886c-c90452494a2f",
         "2bc95fd9-e53a-474e-a4e9-2aede5ceb001",
         "5ce583fd-292c-4667-89c1-155c53cbf379",

@@ -60,3 +60,14 @@ waitImageSpeed		= 0.1;
 runImageSpeed		= 0.25;
 
 #endregion
+
+#region Other Properties
+
+maxHp			= 100;
+currentHp		= 100;
+maxStamina		= 100;
+currentStamina	= 100;
+
+runStaminaCost	= 2;
+
+#endregion

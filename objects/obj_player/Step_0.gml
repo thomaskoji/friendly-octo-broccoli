@@ -5,4 +5,5 @@ else
 
 stateExecute();
 
-scr_objectUpdateLocation(); 
+scr_objectUpdateLocation();
+scr_updateStats();
