@@ -46,7 +46,7 @@ slideFriction		= 0.1;
 
 jump_power			= 3;
 gravity_inc			= 0.2;
-gravity_max			= 1 ;
+gravity_max			= 1;
 jumped				= false;
 onGround			= false;
 
@@ -56,8 +56,8 @@ face_direction		=1; //1 right, -1 left.p
 
 #region Image Properties
 
-waitImageSpeed		= 0.1;
-runImageSpeed		= 0.25;
+waitImageSpeed		= 0.2;
+runImageSpeed		= 0.2;
 
 #endregion
 
