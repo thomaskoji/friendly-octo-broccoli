@@ -2,6 +2,7 @@ if(state_new)
 {
 	image_speed = waitImageSpeed;
 	sprite_index = spr_playerWait;
+	image_index = 0;
 }
 
 scr_applyXFriction(runFriction);

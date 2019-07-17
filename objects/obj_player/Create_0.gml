@@ -44,9 +44,9 @@ crouchAccel			= 0.02;
 
 slideFriction		= 0.1;
 
-jump_power			= 4;
-gravity_inc			= 0.2;
-gravity_max			= 2;
+jump_power			= 5;
+fallGravity			= 0.3;
+fallMaxGravity		= 10;
 jumped				= false;
 onGround			= false;
 

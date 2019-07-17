@@ -1,7 +1,13 @@
+/// @discription apply gravity
+/// @param gravity,maxGravity
+
+var _gravity		= argument[0];
+var _maxGravity		= argument[1];
+
 if (!onGround)
 {
-	velocity[YAXIS] += gravity_inc;
+	velocity[YAXIS] += _gravity;
 	
-	if (velocity[YAXIS] >= gravity_max)
-	{velocity[YAXIS] = gravity_max}
+	if (velocity[YAXIS] >= _maxGravity)
+	{velocity[YAXIS] = _maxGravity}
 }

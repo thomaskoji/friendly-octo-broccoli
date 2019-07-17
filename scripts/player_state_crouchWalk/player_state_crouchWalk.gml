@@ -1,6 +1,7 @@
 if(state_new)
 {
 	sprite_index = spr_playerCrouchWalk;
+	image_index = 0;
 }
 
 scr_applyXMovement(global.inputHorizontalTotal, crouchAccel, crouchMaxSpeed, crouchFriction);

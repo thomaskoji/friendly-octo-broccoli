@@ -1,9 +1,13 @@
 if(state_new)
 {
-	sprite_index=spr_playerFall;
+	if (state_previous != "jump")
+	{
+		sprite_index = spr_playerFall;
+		image_index = 0;
+	}
 }
 
-scr_applyGravity();
+scr_applyGravity(fallGravity,fallMaxGravity);
 
 scr_applyXMovement(global.inputHorizontalTotal, runAccel, runMaxSpeed, runFriction);
 

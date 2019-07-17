@@ -6,4 +6,5 @@ else
 stateExecute();
 
 scr_objectUpdateLocation();
+scr_walkDownSlopes();
 scr_updateStats();
