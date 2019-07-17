@@ -36,7 +36,7 @@ velocity[XAXIS]		= 0;
 
 runMaxSpeed			= 3;
 runFriction			= 0.2;
-runAccel			= 0.1;
+runAccel			= 0.15;
 
 crouchMaxSpeed		= 0.5;
 crouchFriction		= 0.02;
@@ -44,9 +44,9 @@ crouchAccel			= 0.02;
 
 slideFriction		= 0.1;
 
-jump_power			= 3;
+jump_power			= 4;
 gravity_inc			= 0.2;
-gravity_max			= 1;
+gravity_max			= 2;
 jumped				= false;
 onGround			= false;
 
