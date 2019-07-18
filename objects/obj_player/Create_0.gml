@@ -58,6 +58,7 @@ face_direction		=1; //1 right, -1 left.p
 
 waitImageSpeed		= 0.2;
 runImageSpeed		= 0.2;
+attackImageSpeed	= 0.2;
 
 #endregion
 
@@ -71,3 +72,5 @@ currentStamina	= 100;
 runStaminaCost	= 2;
 
 #endregion
+
+attackTimer = 0;

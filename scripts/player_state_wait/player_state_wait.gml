@@ -34,4 +34,9 @@ if(global.inputSpacePressed)
 	stateSwitch("jump");
 }
 
+if(global.inputMouseLeftPressed)
+{
+	stateSwitch("attackA")
+}
+
 #endregion

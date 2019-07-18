@@ -4,10 +4,13 @@ upKey		= ord("W");
 downKey		= ord("S");
 leftKey		= ord("A");
 rightKey	= ord("D");
+
 spaceKey	= vk_space;
 shiftKey	= vk_shift;
 controlKey	= vk_control;
-EKey		= ord("E");
+
+mouseLeft	= mb_left;
+mouseRight	= mb_right;
 
 global.inputDirection		= no_direction;
 
