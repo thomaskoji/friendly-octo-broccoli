@@ -4,26 +4,29 @@ if(state_new)
 	image_speed = attackImageSpeed;
 	image_index = 0;
 	attackTimer = 0;
+	willAttack	= false;
 }
 
 #region state machine
 
-if (image_index > image_number - 1)
+if(image_index > image_number - 1)
+{
+	image_index = image_number - 1;
+}
+
+var _attack_max_time = 25;
+if(attackTimer >= _attack_max_time)
 {
 	stateSwitch("wait");
 }
-
-
-var _time_limit		= 18;
-var _will_attack	= false;
 attackTimer++;
 
-if(global.inputMouseLeftPressed and attackTimer < _time_limit)
+if(global.inputMouseLeftPressed and attackTimer < _attack_max_time)
 {
-	_will_attack = true;
+	willAttack = true;
 }
 
-if(attackTimer >= _time_limit and _will_attack)
+if(attackTimer >= _attack_max_time and willAttack)
 {
 	stateSwitch("attackB");
 }

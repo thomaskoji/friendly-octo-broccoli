@@ -74,3 +74,4 @@ runStaminaCost	= 2;
 #endregion
 
 attackTimer = 0;
+willAttack = false;
