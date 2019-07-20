@@ -959,6 +959,14 @@
             }
         },
         {
+            "Key": "c01e8840-4fdd-4821-91a8-2eadc207c9ae",
+            "Value": {
+                "id": "79f92190-a90e-43a0-b924-e0bb7ed700e5",
+                "resourcePath": "tilesets\\tileset_soulsLike\\tileset_soulsLike.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "c193c91b-adbf-48b8-9180-6770479dad6c",
             "Value": {
                 "id": "5e6e63fc-243e-4334-be4d-9289aa7610f0",
@@ -1172,6 +1180,14 @@
                 "id": "a4afc244-1f7b-41ab-a623-fee7d5bffdcc",
                 "resourcePath": "views\/e8af542b-165c-44dc-a0b5-b73b95e2d243.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e9a5ba44-bf2c-4f46-9202-f1f91491f13b",
+            "Value": {
+                "id": "56251368-8ba5-4100-9779-b088a141708c",
+                "resourcePath": "sprites\\spr_soulsLikeTileset\\spr_soulsLikeTileset.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
