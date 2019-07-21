@@ -24,17 +24,6 @@ if(global.inputControlPressed)
 {
 	stateSwitch("slide");
 }
-/*
-if(global.inputMouseLeftPressed)
-{
-	stateSwitch("attackA");
-}
-
-if(global.inputMouseRightPressed)
-{
-	stateSwitch("attackHeavyA");
-}
-*/
 if(velocity[XAXIS] == 0 && global.inputHorizontalTotal == 0)
 {
 	stateSwitch("wait");
@@ -48,6 +37,16 @@ if(!onGround)
 if(global.inputSpacePressed)
 {
 	stateSwitch("jump");
+}
+
+if(global.inputMouseLeftPressed and currentStamina > attackStaminaCost)
+{
+	stateSwitch("attackA")
+}
+
+if(global.inputUpHeld and global.inputMouseLeftPressed)
+{
+	stateSwitch("attackGroundUp");
 }
 
 #endregion

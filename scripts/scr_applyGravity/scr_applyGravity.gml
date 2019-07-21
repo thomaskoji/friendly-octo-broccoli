@@ -8,6 +8,8 @@ if (!onGround)
 {
 	velocity[YAXIS] += _gravity;
 	
-	if (velocity[YAXIS] >= _maxGravity)
-	{velocity[YAXIS] = _maxGravity}
+	if (velocity[YAXIS] > _maxGravity)
+	{
+		velocity[YAXIS] = _maxGravity;
+	}
 }

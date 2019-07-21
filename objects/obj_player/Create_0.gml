@@ -10,16 +10,9 @@ stateAdd("backflip", player_state_backflip);
 stateAdd("fall", player_state_fall);
 stateAdd("slide", player_state_slide);
 stateAdd("slideAttack", player_state_slideAttack);
-stateAdd("crouch", player_state_crouch);
-stateAdd("crouchWalk", player_state_crouchWalk);
 stateAdd("attackA", player_state_attackA);
 stateAdd("attackB", player_state_attackB);
 stateAdd("attackC", player_state_attackC);
-stateAdd("attackD", player_state_attackD);
-stateAdd("attackHeavyA", player_state_attackA);
-stateAdd("attackHeavyB", player_state_attackB);
-stateAdd("attackHeavyC", player_state_attackC);
-stateAdd("attackHeavyD", player_state_attackD);
 stateAdd("attackGroundUp", player_state_attackGroundUp);
 stateAdd("attackGroundDown", player_state_attackGroundDown);
 stateAdd("attackAirUp", player_state_attackAirUp);
@@ -38,11 +31,10 @@ runMaxSpeed			= 3;
 runFriction			= 0.2;
 runAccel			= 0.15;
 
-crouchMaxSpeed		= 0.5;
-crouchFriction		= 0.02;
-crouchAccel			= 0.02;
-
 slideFriction		= 0.1;
+
+attackFriction		= 0.2;
+attackGroundUpFriction = .1;
 
 jump_power			= 5;
 fallGravity			= 0.3;
@@ -66,12 +58,18 @@ attackImageSpeed	= 0.2;
 
 maxHp			= 100;
 currentHp		= 100;
+
 maxStamina		= 100;
 currentStamina	= 100;
+staminaCooldown	= 50;
+staminaTimer	= 0;
 
-runStaminaCost	= 2;
+attackStaminaCost	= 20;
+attackTimer		= 0;
+willAttack		= false;
+
+attackGroundUpVelocity = 20;
+attackGroundUpGravity = 3;
+attackGroundUpMaxGravity = 1;
 
 #endregion
-
-attackTimer = 0;
-willAttack = false;

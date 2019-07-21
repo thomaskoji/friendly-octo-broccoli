@@ -5,6 +5,8 @@ if(state_new)
 	image_index = 0;
 	attackTimer = 0;
 	willAttack	= false;
+	currentStamina -= attackStaminaCost;
+	staminaTimer = 0;
 }
 
 #region state machine

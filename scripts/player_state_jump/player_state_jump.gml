@@ -1,4 +1,4 @@
-if(state_new && !jumped)
+if(state_new and !jumped)
 {
 	velocity[YAXIS] -= jump_power;
 	sprite_index = spr_playerJump;

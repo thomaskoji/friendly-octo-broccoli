@@ -88,3 +88,17 @@ if(obj_player.currentStamina != 0)
 draw_text(90,14,string(obj_player.currentStamina));
 
 #endregion
+
+#region top right HUD
+
+draw_set_halign(fa_right);
+draw_set_valign(fa_top);
+draw_set_colour($e4924f);
+var _tutorialString = "";
+_tutorialString += "wasd to move" + "\n";
+_tutorialString += "mouse 1 to attack" + "\n";
+_tutorialString += "wasd + attack = special attacks" + "\n";
+draw_set_alpha(1);
+draw_text(room_width-5,5, _tutorialString);
+
+#endregion

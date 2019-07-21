@@ -1,11 +1,7 @@
-if(currentStamina != maxStamina)
+if(currentStamina != maxStamina and staminaTimer > staminaCooldown)
 {
 	currentStamina ++;
 }
 
-if(state = "run")
-{
-	currentStamina -= runStaminaCost
-}
-
+staminaTimer ++;
 currentStamina = clamp(currentStamina,0,maxStamina);

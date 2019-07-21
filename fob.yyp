@@ -47,14 +47,6 @@
             }
         },
         {
-            "Key": "0768ce09-ff30-441d-927b-1c854fb52803",
-            "Value": {
-                "id": "cb7b1d17-7dac-4f0a-9d3b-506183629fe4",
-                "resourcePath": "scripts\\player_state_crouchWalk\\player_state_crouchWalk.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "08ae1346-3784-443e-b916-730e626b34dd",
             "Value": {
                 "id": "d4d579cc-7967-4466-afa2-47a219126de4",
@@ -172,14 +164,6 @@
                 "id": "f2798cdb-74ee-4a5a-8d0d-bb547573db69",
                 "resourcePath": "sprites\/spr_ramp_tl\/spr_ramp_tl.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "236d0fa8-694f-4bdc-b317-f73598069313",
-            "Value": {
-                "id": "645c0896-e579-4265-b6e4-710a2851492b",
-                "resourcePath": "scripts\\player_state_attackD\\player_state_attackD.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -412,14 +396,6 @@
                 "id": "d4202d3e-6f23-44ef-aab5-c64f8efa4c20",
                 "resourcePath": "views\/5665667f-e6cf-4542-b5a9-50f81c11b2c8.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "57040401-07fa-4ba2-a047-b594aba63aee",
-            "Value": {
-                "id": "8d332744-d350-4feb-a5e6-db1f49a5a5d5",
-                "resourcePath": "scripts\\player_state_attackHeavyB\\player_state_attackHeavyB.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -692,14 +668,6 @@
                 "id": "4efe718d-b28e-4bea-8094-3f31b64b843f",
                 "resourcePath": "objects\/obj_wall_octo\/obj_wall_octo.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "8324c6e8-c690-4a3c-b2dd-739da4bf32ad",
-            "Value": {
-                "id": "fa2c35a1-96c2-4199-b2d8-2c4ecc7898a8",
-                "resourcePath": "scripts\\player_state_attackHeavyA\\player_state_attackHeavyA.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -983,14 +951,6 @@
             }
         },
         {
-            "Key": "be398774-1846-43ed-87a0-692558d85023",
-            "Value": {
-                "id": "7bd30938-d79d-4174-9535-863a1e31aa6e",
-                "resourcePath": "scripts\\player_state_crouch\\player_state_crouch.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "c01e8840-4fdd-4821-91a8-2eadc207c9ae",
             "Value": {
                 "id": "79f92190-a90e-43a0-b924-e0bb7ed700e5",
@@ -1060,14 +1020,6 @@
                 "id": "b73daa4f-2b8f-4f48-8de4-d7f31d0056ed",
                 "resourcePath": "views\\ca80c0ec-f627-4cf1-9cfb-9663dd0e4d44.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "cadc1d8a-0dee-4a8c-971e-e357b11ba390",
-            "Value": {
-                "id": "480fe601-ebc1-4db8-9364-eeb595c18371",
-                "resourcePath": "scripts\\player_state_attackHeavyC\\player_state_attackHeavyC.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -1271,14 +1223,6 @@
             }
         },
         {
-            "Key": "f481f69d-2b19-4d2e-a937-ce938c2f7fc2",
-            "Value": {
-                "id": "2a80ee1a-5a3b-4d45-9603-13b51dbe7c13",
-                "resourcePath": "scripts\\player_state_attackHeavyD\\player_state_attackHeavyD.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "fa8a58c1-ea7b-4964-88c6-6ca1abe19fda",
             "Value": {
                 "id": "bdacab33-6e72-416a-b088-d915395ab8d4",
@@ -1352,16 +1296,9 @@
         "c80093e1-c1d5-4ddf-a758-8997d6987195",
         "441cc19a-88ad-4591-a2ee-cc46cc24e766",
         "520c2df9-5863-4d92-bf74-113ac17af051",
-        "be398774-1846-43ed-87a0-692558d85023",
-        "0768ce09-ff30-441d-927b-1c854fb52803",
         "f33a5cbc-6a72-4b17-9e15-4673f128c463",
         "1969b72a-6af3-4280-8c37-1e04023f0a4f",
         "dc86ef4d-ece1-4e8e-bc91-0f245c1d7e33",
-        "236d0fa8-694f-4bdc-b317-f73598069313",
-        "8324c6e8-c690-4a3c-b2dd-739da4bf32ad",
-        "57040401-07fa-4ba2-a047-b594aba63aee",
-        "cadc1d8a-0dee-4a8c-971e-e357b11ba390",
-        "f481f69d-2b19-4d2e-a937-ce938c2f7fc2",
         "8c380d13-cdfd-4833-b0b1-e5d64c947d5e",
         "3a2946b7-ed27-40f6-8fb0-49eed995ef1d",
         "7b94bbe0-f301-459e-8317-214d1cde713e",

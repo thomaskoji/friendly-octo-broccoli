@@ -1,4 +1,4 @@
-if(state_new && !jumped)
+if(state_new and !jumped)
 {
 	image_speed = 0.5;
 	sprite_index = spr_playerBackflip;
