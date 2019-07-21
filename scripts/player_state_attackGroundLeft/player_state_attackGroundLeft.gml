@@ -4,6 +4,7 @@ if(state_new)
 	image_speed = attackImageSpeed;
 	image_index = 0;
 	currentStamina -= attackSideStaminaCost;
+	staminaTimer = 0;
 }
 
 velocity[YAXIS] = 0;

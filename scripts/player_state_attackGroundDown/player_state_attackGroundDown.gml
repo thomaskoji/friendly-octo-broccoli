@@ -4,6 +4,7 @@ if(state_new)
 	image_speed = attackImageSpeed;
 	image_index = 0;
 	currentStamina -= attackStaminaCost;
+	staminaTimer = 0;
 }
 
 scr_applyGravity(attackGroundUpGravity,attackGroundUpMaxGravity);

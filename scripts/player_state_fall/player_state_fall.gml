@@ -1,7 +1,10 @@
 if(state_new)
 {
-	sprite_index = spr_playerFall;
-	image_index = 0;
+	if(state_previous != "jump" and state_previous != "backflip")
+	{
+		sprite_index = spr_playerFall;
+		image_index = 0;
+	}
 }
 
 scr_applyGravity(fallGravity,fallMaxGravity);
