@@ -9,14 +9,13 @@ stateAdd("jump", player_state_jump);
 stateAdd("backflip", player_state_backflip);
 stateAdd("fall", player_state_fall);
 stateAdd("slide", player_state_slide);
-stateAdd("slideAttack", player_state_slideAttack);
 stateAdd("attackA", player_state_attackA);
 stateAdd("attackB", player_state_attackB);
 stateAdd("attackC", player_state_attackC);
 stateAdd("attackGroundUp", player_state_attackGroundUp);
 stateAdd("attackGroundDown", player_state_attackGroundDown);
-stateAdd("attackAirUp", player_state_attackAirUp);
-stateAdd("attackAirDown", player_state_attackAirDown);
+stateAdd("attackGroundLeft", player_state_attackGroundLeft);
+stateAdd("attackGroundRight", player_state_attackGroundRight);
 
 stateBeginIn("wait");
 
@@ -54,7 +53,7 @@ attackImageSpeed	= 0.2;
 
 #endregion
 
-#region Other Properties
+#region Statistic Properties
 
 maxHp			= 100;
 currentHp		= 100;
@@ -64,12 +63,21 @@ currentStamina	= 100;
 staminaCooldown	= 50;
 staminaTimer	= 0;
 
-attackStaminaCost	= 20;
+#endregion
+
+#region Attack Properties
+
+
 attackTimer		= 0;
 willAttack		= false;
+
+attackStaminaCost	= 20;
+attackSideStaminaCost = 50;
 
 attackGroundUpVelocity = 20;
 attackGroundUpGravity = 3;
 attackGroundUpMaxGravity = 1;
+
+attackGroundSideVelocity = 8;
 
 #endregion

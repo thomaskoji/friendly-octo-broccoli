@@ -4,7 +4,6 @@ if(state_new and !jumped)
 	sprite_index = spr_playerJump;
 	image_index = 0;
 	jumped = true;
-	
 	state_var[0] = false; // player has let go of jump
 }
 
@@ -20,5 +19,29 @@ scr_applyXMovement(global.inputHorizontalTotal, runAccel, runMaxSpeed, runFricti
 if(velocity[YAXIS] > 0)
 {
 	stateSwitch("fall");
+	jumped = false;
+}
+
+if(global.inputUpHeld and global.inputMouseLeftPressed)
+{
+	stateSwitch("attackGroundUp");
+	jumped = false;
+}
+
+if(global.inputDownHeld and global.inputMouseLeftPressed)
+{
+	stateSwitch("attackGroundDown");
+	jumped = false;
+}
+
+if(global.inputLeftHeld and global.inputMouseLeftPressed and currentStamina > attackSideStaminaCost)
+{
+	stateSwitch("attackGroundLeft");
+	jumped = false;
+}
+
+if(global.inputRightHeld and global.inputMouseLeftPressed and currentStamina > attackSideStaminaCost)
+{
+	stateSwitch("attackGroundRight");
 	jumped = false;
 }

@@ -39,9 +39,14 @@ if(global.inputMouseLeftPressed and currentStamina > attackStaminaCost)
 	stateSwitch("attackA")
 }
 
-if(global.inputUpHeld and global.inputMouseLeftPressed)
+if(global.inputUpHeld and global.inputMouseLeftPressed and currentStamina > attackSideStaminaCost)
 {
 	stateSwitch("attackGroundUp");
+}
+
+if(global.inputDownHeld and global.inputMouseLeftPressed and currentStamina > attackSideStaminaCost)
+{
+	stateSwitch("attackGroundDown");
 }
 
 #endregion

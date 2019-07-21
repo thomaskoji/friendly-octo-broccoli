@@ -1,8 +1,8 @@
 {
-    "id": "25db51b9-8ae2-4ee9-83a7-e9dad7267c06",
+    "id": "913edc6e-b7d1-4ce9-9270-1c3d2ade3aba",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "player_state_attackAirDown",
+    "name": "player_state_attackGroundRight",
     "IsCompatibility": false,
     "IsDnD": false
 }

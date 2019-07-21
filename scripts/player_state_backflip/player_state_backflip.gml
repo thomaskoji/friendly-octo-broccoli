@@ -16,3 +16,27 @@ if(velocity[YAXIS] > 0)
 	stateSwitch("fall");
 	jumped = false;
 }
+
+if(global.inputUpHeld and global.inputMouseLeftPressed)
+{
+	stateSwitch("attackGroundUp");
+	jumped = false;
+}
+
+if(global.inputDownHeld and global.inputMouseLeftPressed)
+{
+	stateSwitch("attackGroundDown");
+	jumped = false;
+}
+
+if(global.inputLeftHeld and global.inputMouseLeftPressed and currentStamina > attackSideStaminaCost)
+{
+	stateSwitch("attackGroundLeft");
+	jumped = false;
+}
+
+if(global.inputRightHeld and global.inputMouseLeftPressed and currentStamina > attackSideStaminaCost)
+{
+	stateSwitch("attackGroundRight");
+	jumped = false;
+}
