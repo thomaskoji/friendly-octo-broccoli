@@ -55,7 +55,7 @@ _debugString += "Y " + string(obj_player.y) + "\n";
 _debugString += "Xvel " + string(obj_player.velocity[XAXIS]) + "\n";
 _debugString += "Yvel " + string(obj_player.velocity[YAXIS]) + "\n";
 _debugString += "onGround " + string(obj_player.onGround) + "\n";
-_debugString += "FD " + string(obj_player.face_direction) + "\n";
+_debugString += "FaceDir " + string(obj_player.face_direction) + "\n";
 _debugString += _dir + "\n";
 draw_set_alpha(1);
 draw_text(5,25, _debugString);
