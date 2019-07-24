@@ -1,15 +1,9 @@
-event_inherited();
+viewWidth = 1920/4;
+viewHeight = 1080/4;
 
-camera = camera_create();
+windowScale = 4;
 
-var _vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);
-var _pm = matrix_build_projection_ortho(640,360,1,10000);
+window_set_size(viewWidth*windowScale,viewHeight*windowScale);
+alarm[0] = 1;
 
-camera_set_view_mat(camera,_vm);
-camera_set_proj_mat(camera,_pm);
-
-view_camera[0] = camera;
-
-follow = obj_player;
-xTo = x;
-yTo = y;
+surface_resize(application_surface,viewWidth*windowScale,viewHeight*windowScale);
