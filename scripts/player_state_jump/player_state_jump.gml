@@ -7,14 +7,14 @@ if(state_new and !jumped)
 	state_var[0] = false; // player has let go of jump
 }
 
-if (state_var[0] = false and global.inputSpaceHeld == false)
+if (state_var[0] = false and g.jump[pressed] == false)
 {
 	velocity[YAXIS] *= 0.9;
 }
 
 scr_applyGravity(fallGravity,fallMaxGravity);
 
-scr_applyXMovement(global.inputHorizontalTotal, runAccel, runMaxSpeed, runFriction);
+scr_applyXMovement(g.inputHorizontalTotal, runAccel, runMaxSpeed, runFriction);
 
 if(velocity[YAXIS] > 0)
 {
@@ -22,25 +22,25 @@ if(velocity[YAXIS] > 0)
 	jumped = false;
 }
 
-if(global.inputUpHeld and global.inputMouseLeftPressed)
+if(g.up[held] and g.attack[pressed])
 {
 	stateSwitch("attackGroundUp");
 	jumped = false;
 }
 
-if(global.inputDownHeld and global.inputMouseLeftPressed)
+if(g.down[held] and g.attack[pressed])
 {
 	stateSwitch("attackGroundDown");
 	jumped = false;
 }
 
-if(global.inputLeftHeld and global.inputMouseLeftPressed and currentStamina > attackSideStaminaCost)
+if(g.left[held] and g.attack[pressed] and currentStamina > attackSideStaminaCost)
 {
 	stateSwitch("attackGroundLeft");
 	jumped = false;
 }
 
-if(global.inputRightHeld and global.inputMouseLeftPressed and currentStamina > attackSideStaminaCost)
+if(g.right[held] and g.attack[pressed] and currentStamina > attackSideStaminaCost)
 {
 	stateSwitch("attackGroundRight");
 	jumped = false;

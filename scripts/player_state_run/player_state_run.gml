@@ -8,7 +8,7 @@ if(state_new)
 if(velocity[XAXIS] != 0)
 		{face_direction = sign(velocity[XAXIS]);}
 
-scr_applyXMovement(global.inputHorizontalTotal, runAccel, runMaxSpeed, runFriction);
+scr_applyXMovement(g.inputHorizontalTotal, runAccel, runMaxSpeed, runFriction);
 
 #region state machine
 
@@ -20,10 +20,11 @@ if((velocity[XAXIS] < -_spdForSlide && global.inputDirection == east) ||
 	stateSwitch("brake");
 }
 
-if(global.inputControlPressed)
+if(g.slide[pressed])
 {
 	stateSwitch("slide");
 }
+
 if(velocity[XAXIS] == 0 && global.inputHorizontalTotal == 0)
 {
 	stateSwitch("wait");
@@ -34,32 +35,32 @@ if(!onGround)
 	stateSwitch("fall");
 }
 
-if(global.inputSpacePressed)
+if(g.jump[pressed])
 {
 	stateSwitch("jump");
 }
 
-if(global.inputMouseLeftPressed and currentStamina > attackStaminaCost)
+if(g.attack[pressed] and currentStamina > attackStaminaCost)
 {
 	stateSwitch("attackA")
 }
 
-if(global.inputUpHeld and global.inputMouseLeftPressed)
+if(g.up[held] and g.attack[pressed])
 {
 	stateSwitch("attackGroundUp");
 }
 
-if(global.inputDownHeld and global.inputMouseLeftPressed)
+if(g.down[held] and g.attack[pressed])
 {
 	stateSwitch("attackGroundDown");
 }
 
-if(global.inputLeftHeld and global.inputMouseLeftPressed and currentStamina > attackSideStaminaCost)
+if(g.left[held] and g.attack[pressed] and currentStamina > attackSideStaminaCost)
 {
 	stateSwitch("attackGroundLeft");
 }
 
-if(global.inputRightHeld and global.inputMouseLeftPressed and currentStamina > attackSideStaminaCost)
+if(g.right[held] and g.attack[pressed] and currentStamina > attackSideStaminaCost)
 {
 	stateSwitch("attackGroundRight");
 }

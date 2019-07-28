@@ -9,19 +9,9 @@ scr_applyXFriction(runFriction);
 
 #region state machine
 
-if(global.inputHorizontalTotal != 0 && !global.inputControlPressed)
+if(g.inputHorizontalTotal != 0)
 {
 	stateSwitch("run");
-}
-
-if(global.inputControlHeld)
-{
-	stateSwitch("crouch");
-}
-
-if(global.inputControlPressed && global.inputHorizontalTotal != 0)
-{
-	stateSwitch("crouchWalk");
 }
 
 if(!onGround)
@@ -29,22 +19,22 @@ if(!onGround)
 	stateSwitch("fall");
 }
 
-if(global.inputSpacePressed)
+if(g.jump[pressed])
 {
 	stateSwitch("jump");
 }
 
-if(global.inputMouseLeftPressed and currentStamina > attackStaminaCost)
+if(g.attack[pressed] and currentStamina > attackStaminaCost)
 {
 	stateSwitch("attackA")
 }
 
-if(global.inputUpHeld and global.inputMouseLeftPressed and currentStamina > attackSideStaminaCost)
+if(g.up[held] and g.attack[pressed] and currentStamina > attackSideStaminaCost)
 {
 	stateSwitch("attackGroundUp");
 }
 
-if(global.inputDownHeld and global.inputMouseLeftPressed and currentStamina > attackSideStaminaCost)
+if(g.down[held] and g.attack[pressed] and currentStamina > attackSideStaminaCost)
 {
 	stateSwitch("attackGroundDown");
 }

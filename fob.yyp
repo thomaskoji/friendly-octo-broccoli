@@ -647,14 +647,6 @@
             }
         },
         {
-            "Key": "824aac77-ffc9-4a96-8b1b-b6c2f01e11e8",
-            "Value": {
-                "id": "4efe718d-b28e-4bea-8094-3f31b64b843f",
-                "resourcePath": "objects\/obj_wall_octo\/obj_wall_octo.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "8375ac50-a9d3-4644-83fc-ffcfa1bf381f",
             "Value": {
                 "id": "8b6fb7d2-40c1-4059-a9d8-2fda2c5102f9",
@@ -863,14 +855,6 @@
             }
         },
         {
-            "Key": "aab8244f-19c0-437b-84aa-06a0f944d271",
-            "Value": {
-                "id": "8408403a-61d5-417a-9372-73ab9968c357",
-                "resourcePath": "objects\/obj_wall_thin_vert\/obj_wall_thin_vert.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "ac7626af-63a8-4635-b4ba-79e637fb23a8",
             "Value": {
                 "id": "98440d64-4b8e-475d-a12f-13c509d2377f",
@@ -924,6 +908,14 @@
                 "id": "38fdcc1f-d10c-4bf7-abc3-cecbdc404bda",
                 "resourcePath": "views\/b7090862-2cf1-4e65-bc3e-496b0ae2c2a9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b719ae2e-882c-47d4-b47f-110a4e9189e1",
+            "Value": {
+                "id": "bfe31503-fdc5-442e-b81d-05a19e3453cc",
+                "resourcePath": "objects\\obj_ladder\\obj_ladder.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1188,14 +1180,6 @@
                 "id": "7ca3b71a-3408-48df-ae4a-d9f7c2dc1ec1",
                 "resourcePath": "views\/ec0d6ae3-b8e9-49b1-abbc-f1694c74d1f8.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "f16aa672-4ab7-4221-a21c-c0d844fd1276",
-            "Value": {
-                "id": "e4780520-4b50-4196-b4c4-23976808e00e",
-                "resourcePath": "objects\/obj_wall_thin_hori\/obj_wall_thin_hori.yy",
-                "resourceType": "GMObject"
             }
         },
         {

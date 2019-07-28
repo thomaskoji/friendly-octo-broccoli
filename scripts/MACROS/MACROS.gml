@@ -1,5 +1,5 @@
 #macro NULLVALUE -99999
-
+#macro g global
 //Velocity
 #macro XAXIS 0
 #macro YAXIS 1
@@ -14,3 +14,8 @@
 #macro south_west 225
 #macro south 270
 #macro south_east 315
+
+//Input
+#macro held 0
+#macro pressed 1
+#macro released 2

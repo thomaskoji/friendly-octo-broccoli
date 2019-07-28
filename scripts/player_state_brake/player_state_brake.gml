@@ -6,10 +6,10 @@ if(state_new)
 	image_index = 0;
 }
 
-if(global.inputDirection == no_direction)
+if(g.inputDirection == no_direction)
 		scr_applyXFriction(runFriction);	
 	else
-		scr_applyXMovement(global.inputHorizontalTotal, runAccel, runMaxSpeed, runFriction);
+		scr_applyXMovement(g.inputHorizontalTotal, runAccel, runMaxSpeed, runFriction);
 
 var _changed_direction = (velocity[XAXIS] >= 0 && state_var[0] == -1) || (velocity[XAXIS] <= 0 && state_var[0] == 1);
 var _slide_cancelled = (global.inputHorizontalTotal == 1 && state_var[0] == 1) || (global.inputHorizontalTotal == -1 && state_var[0]==-1);
@@ -23,7 +23,7 @@ if(!onGround)
 	stateSwitch("fall");
 }
 
-if(global.inputSpacePressed)
+if(g.jump[pressed])
 {
 	stateSwitch("backflip");
 }

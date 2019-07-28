@@ -13,7 +13,7 @@ if(velocity[XAXIS] == 0)
 	stateSwitch("wait");
 }
 
-if(velocity[XAXIS] == 0 && global.inputHorizontalTotal != 0)
+if(velocity[XAXIS] == 0 && g.inputHorizontalTotal != 0)
 {
 	stateSwitch("run");
 }
@@ -23,7 +23,7 @@ if(!onGround)
 	stateSwitch("fall");
 }
 
-if(global.inputSpacePressed)
+if(g.jump[pressed])
 {
 	stateSwitch("jump");
 }

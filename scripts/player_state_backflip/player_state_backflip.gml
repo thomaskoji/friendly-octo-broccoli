@@ -9,7 +9,7 @@ if(state_new and !jumped)
 
 scr_applyGravity(fallGravity,fallMaxGravity);
 
-scr_applyXMovement(global.inputHorizontalTotal, runAccel, runMaxSpeed, runFriction);
+scr_applyXMovement(g.inputHorizontalTotal, runAccel, runMaxSpeed, runFriction);
 
 if(velocity[YAXIS] > 0)
 {
@@ -17,25 +17,25 @@ if(velocity[YAXIS] > 0)
 	jumped = false;
 }
 
-if(global.inputUpHeld and global.inputMouseLeftPressed)
+if(g.up[held] and g.attack[pressed])
 {
 	stateSwitch("attackGroundUp");
 	jumped = false;
 }
 
-if(global.inputDownHeld and global.inputMouseLeftPressed)
+if(g.down[held] and g.attack[pressed])
 {
 	stateSwitch("attackGroundDown");
 	jumped = false;
 }
 
-if(global.inputLeftHeld and global.inputMouseLeftPressed and currentStamina > attackSideStaminaCost)
+if(g.left[held] and g.attack[pressed] and currentStamina > attackSideStaminaCost)
 {
 	stateSwitch("attackGroundLeft");
 	jumped = false;
 }
 
-if(global.inputRightHeld and global.inputMouseLeftPressed and currentStamina > attackSideStaminaCost)
+if(g.right[held] and g.attack[pressed] and currentStamina > attackSideStaminaCost)
 {
 	stateSwitch("attackGroundRight");
 	jumped = false;

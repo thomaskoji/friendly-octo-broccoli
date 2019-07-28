@@ -9,7 +9,7 @@ if(state_new)
 
 scr_applyGravity(fallGravity,fallMaxGravity);
 
-scr_applyXMovement(global.inputHorizontalTotal, runAccel, runMaxSpeed, runFriction);
+scr_applyXMovement(g.inputHorizontalTotal, runAccel, runMaxSpeed, runFriction);
 
 #region state machine
 
@@ -18,27 +18,27 @@ if(velocity[YAXIS] == 0)
 	stateSwitch("wait");
 }
 
-if(global.inputHorizontalTotal != 0 && !global.inputControlPressed && velocity[YAXIS] == 0)
+if(g.inputHorizontalTotal != 0 && !g.slide[pressed] && velocity[YAXIS] == 0)
 {
 	stateSwitch("run");
 }
 
-if(global.inputUpHeld and global.inputMouseLeftPressed)
+if(g.up[held] and g.attack[pressed])
 {
 	stateSwitch("attackGroundUp");
 }
 
-if(global.inputDownHeld and global.inputMouseLeftPressed)
+if(g.down[held] and g.attack[pressed])
 {
 	stateSwitch("attackGroundDown");
 }
 
-if(global.inputLeftHeld and global.inputMouseLeftPressed and currentStamina > attackSideStaminaCost)
+if(g.left[held] and g.attack[pressed] and currentStamina > attackSideStaminaCost)
 {
 	stateSwitch("attackGroundLeft");
 }
 
-if(global.inputRightHeld and global.inputMouseLeftPressed and currentStamina > attackSideStaminaCost)
+if(g.right[held] and g.attack[pressed]and currentStamina > attackSideStaminaCost)
 {
 	stateSwitch("attackGroundRight");
 }
