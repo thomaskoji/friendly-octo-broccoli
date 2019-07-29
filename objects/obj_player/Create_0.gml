@@ -26,6 +26,8 @@ stateBeginIn("wait");
 velocity[YAXIS]		= 0;
 velocity[XAXIS]		= 0;
 
+waitFriction		= .5;
+
 runMaxSpeed			= 3;
 runFriction			= 0.2;
 runAccel			= 0.15;

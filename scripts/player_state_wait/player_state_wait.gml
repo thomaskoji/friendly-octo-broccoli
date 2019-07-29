@@ -5,7 +5,7 @@ if(state_new)
 	image_index = 0;
 }
 
-scr_applyXFriction(runFriction);
+scr_applyXFriction(waitFriction);
 
 #region state machine
 
