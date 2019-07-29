@@ -16,40 +16,40 @@ g.right[pressed] = keyboard_check_pressed(rightKey);
 g.right[released] = keyboard_check_released(rightKey);
 g.right[held] = keyboard_check(rightKey);
 
-jump[pressed] = keyboard_check_pressed(jumpKey);
-jump[released] = keyboard_check_released(jumpKey);
+g.jump[pressed] = keyboard_check_pressed(jumpKey);
+g.jump[released] = keyboard_check_released(jumpKey);
 if(keyboard_check(jumpKey))
-	jump[held]++;
+	g.jump[held]++;
 else
-	jump[held]=0;
+	g.jump[held]=0;
 	
-interact[pressed] = keyboard_check_pressed(interactKey);
-interact[released] = keyboard_check_released(interactKey);
+g.interact[pressed] = keyboard_check_pressed(interactKey);
+g.interact[released] = keyboard_check_released(interactKey);
 if(keyboard_check(interactKey))
-	interact[held]++;
+	g.interact[held]++;
 else
-	interact[held]=0;
+	g.interact[held]=0;
 	
-attack[pressed] = keyboard_check_pressed(attackKey);
-attack[released] = keyboard_check_released(attackKey);
-if(keyboard_check(attackKey))
-	attack[held]++;
+g.attack[pressed] = mouse_check_button_pressed(attackKey);
+g.attack[released] = mouse_check_button_released(attackKey);
+if(mouse_check_button(attackKey))
+	g.attack[held]++;
 else
-	attack[held]=0;
+	g.attack[held]=0;
 	
-altAttack[pressed] = keyboard_check_pressed(altAttackKey);
-altAttack[released] = keyboard_check_released(altAttackKey);
-if(keyboard_check(altAttackKey))
-	altAttack[held]++;
+g.altAttack[pressed] = mouse_check_button_pressed(altAttackKey);
+g.altAttack[released] = mouse_check_button_released(altAttackKey);
+if(mouse_check_button(altAttackKey))
+	g.altAttack[held]++;
 else
-	altAttack[held]=0;
+	g.altAttack[held]=0;
 	
-slide[pressed] = keyboard_check_pressed(slideKey);
-slide[released] = keyboard_check_released(slideKey);
+g.slide[pressed] = keyboard_check_pressed(slideKey);
+g.slide[released] = keyboard_check_released(slideKey);
 if(keyboard_check(slideKey))
-	slide[held]++;
+	g.slide[held]++;
 else
-	slide[held]=0;
+	g.slide[held]=0;
 
 
 //--------------------- input direction code ------------------------//

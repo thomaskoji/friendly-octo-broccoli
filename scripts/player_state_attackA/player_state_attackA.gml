@@ -25,7 +25,7 @@ if(attackTimer >= _attack_max_time)
 }
 attackTimer++;
 
-if(global.inputMouseLeftPressed and attackTimer < _attack_max_time)
+if(g.attack[pressed] and attackTimer < _attack_max_time)
 {
 	willAttack = true;
 }

@@ -57,6 +57,7 @@ _debugString += "Yvel " + string(obj_player.velocity[YAXIS]) + "\n";
 _debugString += "onGround " + string(obj_player.onGround) + "\n";
 _debugString += "FaceDir " + string(obj_player.face_direction) + "\n";
 _debugString += _dir + "\n";
+_debugString += "attack" + string(g.attack[pressed]) + "\n";
 draw_set_alpha(1);
 draw_text(5,25, _debugString);
 
