@@ -34,3 +34,6 @@ chaseDistance		= 150;
 attackDistance		= 30;
 
 #endregion
+
+maxHp = 200;
+currentHp = maxHp;

@@ -10,6 +10,7 @@ if(state_new)
 }
 
 scr_applyXFriction(attackFriction);
+create_hitbox(x, y, self, spr_playerAttackAHitbox, 0, 4, 1, image_xscale);
 
 #region state machine
 

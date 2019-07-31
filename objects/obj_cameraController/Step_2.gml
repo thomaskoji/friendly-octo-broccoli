@@ -9,7 +9,7 @@ if(instance_exists(obj_player))
 	var _curX = camera_get_view_x(view);
 	var _curY = camera_get_view_y(view);
 	
-	var _offset = 8;
+	var _offset = 80;
 	var _speed = .1;
 	camera_set_view_pos(view,lerp(_curX,_x,_speed),lerp(_curY,_y-_offset,_speed));
 }

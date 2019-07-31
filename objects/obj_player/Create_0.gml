@@ -32,7 +32,8 @@ runMaxSpeed			= 3;
 runFriction			= 0.2;
 runAccel			= 0.15;
 
-slideFriction		= 0.1;
+slideFriction		= 0.05;
+slideBoost			= 1;
 
 attackFriction		= 0.2;
 attackGroundUpFriction = .1;
@@ -58,8 +59,8 @@ attackImageSpeed	= 0.2;
 
 #region Statistic Properties
 
-maxHp			= 100;
-currentHp		= 100;
+maxHp = 200;
+currentHp = maxHp;
 
 maxStamina		= 100;
 currentStamina	= 100;

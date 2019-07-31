@@ -2,13 +2,14 @@ if(state_new)
 {
 	sprite_index = spr_playerSlide;
 	image_index = 0;
+	velocity[XAXIS] += slideBoost * face_direction;
 }
 
 scr_applyXFriction(slideFriction);
 
 #region state machine
 
-if(velocity[XAXIS] == 0)
+if(velocity[XAXIS] == 0 or !g.slide[held])
 {
 	stateSwitch("wait");
 }
