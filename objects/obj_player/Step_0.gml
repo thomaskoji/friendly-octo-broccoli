@@ -1,10 +1,2 @@
-if place_meeting(x, y + 1, _solid_parent)
-{onGround = true;}
-else
-{onGround = false;}
-
-stateExecute();
-
-scr_objectUpdateLocation();
-scr_walkDownSlopes();
+event_inherited();
 scr_updateStats();

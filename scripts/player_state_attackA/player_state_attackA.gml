@@ -9,8 +9,12 @@ if(state_new)
 	staminaTimer = 0;
 }
 
+if(animation_hit_frame(3))
+{
+	create_hitbox(x, y, self, spr_playerAttackAHitbox, 0, 10, 5, image_xscale);
+}
+
 scr_applyXFriction(attackFriction);
-create_hitbox(x, y, self, spr_playerAttackAHitbox, 0, 4, 1, image_xscale);
 
 #region state machine
 

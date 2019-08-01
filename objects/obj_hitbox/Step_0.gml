@@ -1,7 +1,20 @@
-var _inst;
-_inst = instance_place(x, y, par_enemy);
-if (_inst != noone and ds_list_find_index(hit_objects,_inst) != -1)
+var _hitNow = ds_list_create();
+var _hits = instance_place_list(x,y,_actor_parent,_hitNow,false);
+
+if(_hits > 0)
 {
-	_inst.currentHp -= damage;
-	ds_list_add(hit_objects,_inst);
-} 
+	for(var i = 0; i < _hits; i++)
+	{
+		var _hitID = _hitNow[| i];
+		if(ds_list_find_index(hitObjects,_hitID) == -1)
+		{
+			ds_list_add(hitObjects,_hitID);
+			with(_hitID)
+			{
+				currentHp -= other.damage;
+			}
+		}
+	}
+}
+
+ds_list_destroy(_hitNow);

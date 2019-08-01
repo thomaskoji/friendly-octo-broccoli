@@ -583,6 +583,14 @@
             }
         },
         {
+            "Key": "7d5ac9c7-8709-4975-80de-9c124a18fdd5",
+            "Value": {
+                "id": "a3802707-c196-467c-a446-fc8c08953d4a",
+                "resourcePath": "sprites\\spr_skeltonAttackHitbox\\spr_skeltonAttackHitbox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7d5dc015-7176-4aa2-a55b-6c93081aae18",
             "Value": {
                 "id": "51784d10-6548-4a04-b925-e0c1a5321a0e",
@@ -1074,7 +1082,7 @@
             "Key": "d52f22ce-cfb7-42f5-9478-2b9df4f0bc0e",
             "Value": {
                 "id": "8d75d418-bf9a-4091-acaf-7b53497f2a3f",
-                "resourcePath": "objects\\par_enemy\\par_enemy.yy",
+                "resourcePath": "objects\\_actor_parent\\_actor_parent.yy",
                 "resourceType": "GMObject"
             }
         },

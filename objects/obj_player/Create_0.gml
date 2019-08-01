@@ -44,7 +44,7 @@ fallMaxGravity		= 10;
 jumped				= false;
 onGround			= false;
 
-face_direction		=1; //1 right, -1 left.p
+face_direction		=1; //1 right, -1 left
 
 #endregion
 
