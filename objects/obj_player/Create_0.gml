@@ -57,18 +57,6 @@ attackImageSpeed	= 0.2;
 
 #endregion
 
-#region Statistic Properties
-
-maxHp = 200;
-currentHp = maxHp;
-
-maxStamina		= 100;
-currentStamina	= 100;
-staminaCooldown	= 50;
-staminaTimer	= 0;
-
-#endregion
-
 #region Attack Properties
 
 
@@ -83,5 +71,17 @@ attackGroundUpGravity = 3;
 attackGroundUpMaxGravity = 1;
 
 attackGroundSideVelocity = 8;
+
+#endregion
+
+#region Stats
+
+maxHp = 200;
+currentHp = maxHp;
+
+maxStamina		= 100;
+currentStamina	= 100;
+staminaCooldown	= 50;
+staminaTimer	= 0;
 
 #endregion

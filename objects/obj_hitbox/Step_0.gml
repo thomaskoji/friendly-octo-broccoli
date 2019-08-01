@@ -11,7 +11,10 @@ if(_hits > 0)
 			ds_list_add(hitObjects,_hitID);
 			with(_hitID)
 			{
-				currentHp -= other.damage;
+				if(_hitID != object_index)
+				{
+					currentHp -= other.damage;
+				}
 			}
 		}
 	}

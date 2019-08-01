@@ -911,14 +911,6 @@
             }
         },
         {
-            "Key": "baadf7cf-8da5-4548-80c0-bc78c9656ba2",
-            "Value": {
-                "id": "4556b675-48f5-44ed-97c4-30c60394ff9e",
-                "resourcePath": "sprites\\spr_playerCrouchWalk\\spr_playerCrouchWalk.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "bac8ec29-1db8-46cd-8155-c29af4434f28",
             "Value": {
                 "id": "4b445717-b6fa-41b8-bf4a-bcb954ad4438",
@@ -972,14 +964,6 @@
                 "id": "e2bb96ae-524c-4136-9609-b24a9bfa20d0",
                 "resourcePath": "scripts\\scr_objectUpdateLocation\\scr_objectUpdateLocation.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "c7588ac2-a404-4b27-a833-8f146767e554",
-            "Value": {
-                "id": "1895b78d-4644-40ce-bec4-034cda99c85a",
-                "resourcePath": "sprites\\spr_playerCrouch\\spr_playerCrouch.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

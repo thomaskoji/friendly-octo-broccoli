@@ -11,7 +11,7 @@ if(state_new)
 
 if(animation_hit_frame(3))
 {
-	create_hitbox(x, y, self, spr_playerAttackAHitbox, 0, 10, 5, image_xscale);
+	create_hitbox(x, y, self, spr_playerAttackAHitbox, 0, 10, 5, face_direction);
 }
 
 scr_applyXFriction(attackFriction);

@@ -7,7 +7,7 @@ if(state_new)
 
 if(animation_hit_frame(8))
 {
-	create_hitbox(x, y, self, spr_skeltonAttackHitbox, 0, 10, 50, image_xscale);
+	create_hitbox(x, y, self, spr_skeltonAttackHitbox, 0, 10, 50, face_direction);
 }
 
 scr_applyXFriction(attackFriction);
