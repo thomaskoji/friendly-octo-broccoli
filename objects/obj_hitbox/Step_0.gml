@@ -6,15 +6,12 @@ if(_hits > 0)
 	for(var i = 0; i < _hits; i++)
 	{
 		var _hitID = _hitNow[| i];
-		if(ds_list_find_index(hitObjects,_hitID) == -1)
+		if(ds_list_find_index(hitObjects,_hitID))
 		{
 			ds_list_add(hitObjects,_hitID);
 			with(_hitID)
 			{
-				if(_hitID != object_index)
-				{
-					currentHp -= other.damage;
-				}
+				currentHp -= other.damage;
 			}
 		}
 	}
