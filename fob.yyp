@@ -191,14 +191,6 @@
             }
         },
         {
-            "Key": "2bc95fd9-e53a-474e-a4e9-2aede5ceb001",
-            "Value": {
-                "id": "630cdea3-7e6c-4cc1-9792-37293ac3bbda",
-                "resourcePath": "scripts\/wall_escape\/wall_escape.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "2c9158f0-94ad-4c32-970a-819f559a1718",
             "Value": {
                 "id": "f843234d-3785-4f81-a43d-55e019aa0011",
@@ -227,14 +219,6 @@
             "Value": {
                 "id": "7291cce5-8536-4031-bf58-50b56cad29e8",
                 "resourcePath": "views\\379cf269-9217-4f58-a3da-e0c5f1f4f563.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "38051016-2a2a-45b6-bb08-08487d3f30ec",
-            "Value": {
-                "id": "d1f84445-6f12-4d92-97d7-6558ad2c4225",
-                "resourcePath": "views\/38051016-2a2a-45b6-bb08-08487d3f30ec.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -644,14 +628,6 @@
                 "id": "8b6fb7d2-40c1-4059-a9d8-2fda2c5102f9",
                 "resourcePath": "sprites\\spr_playerAttackHeavyB\\spr_playerAttackHeavyB.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "858c289a-6456-488a-886c-c90452494a2f",
-            "Value": {
-                "id": "ac1cde69-0154-4895-be71-761bbc91cb95",
-                "resourcePath": "scripts\/movement_and_collision\/movement_and_collision.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -1236,8 +1212,6 @@
         "95467439-b538-4030-ba9e-066569fb5000",
         "51160357-d1eb-42f1-8ff9-cdf0b362d504",
         "2a807607-8cea-4391-9260-1360d49fc02a",
-        "858c289a-6456-488a-886c-c90452494a2f",
-        "2bc95fd9-e53a-474e-a4e9-2aede5ceb001",
         "5ce583fd-292c-4667-89c1-155c53cbf379",
         "e24c82f1-00e9-4954-bed8-ae9c96d6899e",
         "4fc1914d-5706-4c71-9284-1384b1366fb5",

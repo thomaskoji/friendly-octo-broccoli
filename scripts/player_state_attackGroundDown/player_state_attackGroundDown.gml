@@ -10,7 +10,7 @@ if(state_new)
 scr_applyGravity(attackGroundUpGravity,attackGroundUpMaxGravity);
 scr_applyXFriction(attackGroundUpFriction);
 
-if(image_index > image_number - 1)
+if(animation_end())
 {
 	stateSwitch("wait");
 }

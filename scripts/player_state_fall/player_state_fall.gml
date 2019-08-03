@@ -1,6 +1,6 @@
 if(state_new)
 {
-	if(state_previous != "jump" and state_previous != "backflip")
+	if(state_previous != "backflip")
 	{
 		sprite_index = spr_playerFall;
 		image_index = 0;

@@ -1,6 +1,6 @@
 if(state_new and !jumped)
 {
-	image_speed = 0.5;
+	image_speed = jumpImageSpeed;
 	sprite_index = spr_playerBackflip;
 	image_index = 0;
 	velocity[YAXIS] -= jump_power;

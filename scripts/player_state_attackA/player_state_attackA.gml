@@ -18,7 +18,7 @@ scr_applyXFriction(attackFriction);
 
 #region state machine
 
-if(image_index > image_number - 1)
+if(animation_end())
 {
 	image_index = image_number - 1;
 }

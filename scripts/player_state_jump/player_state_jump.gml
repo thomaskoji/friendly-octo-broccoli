@@ -8,9 +8,15 @@ if(state_new and !jumped)
 	state_var[0] = false; // player has let go of jump
 }
 
+if(animation_end())
+{
+	image_index = image_number - 1;
+}
+
+// when player releases jump
 if (state_var[0] = false and g.jump[held] == false)
 {
-	velocity[YAXIS] *= 0.8;
+	velocity[YAXIS] *= 0.9;
 }
 
 scr_applyGravity(fallGravity,fallMaxGravity);

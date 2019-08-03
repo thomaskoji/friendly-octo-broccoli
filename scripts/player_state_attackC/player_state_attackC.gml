@@ -11,7 +11,7 @@ if(state_new)
 
 #region state machine
 
-if (image_index > image_number - 1)
+if (animation_end())
 {
 	stateSwitch("wait");
 }
