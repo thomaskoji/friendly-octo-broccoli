@@ -1,11 +1,10 @@
-if(instance_exists(_actor_parent))
+var _objAbove = instance_place(x, y, _actor_parent);
+
+if(place_meeting(x, y, _objAbove) and _objAbove.velocity[YAXIS] > 0)
 {
-	if(round(_actor_parent.y > y) or g.down[pressed])
+	with(_objAbove)
 	{
-		mask_index = -1;
-	}
-	else
-	{
-		mask_index = spr_oneWayPlatform;
+		stateSwitch("wait");
+		velocity[YAXIS] = 0;
 	}
 }
