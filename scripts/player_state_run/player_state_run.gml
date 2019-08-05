@@ -45,24 +45,4 @@ if(g.attack[pressed] and currentStamina > attackStaminaCost)
 	stateSwitch("attackA")
 }
 
-if(g.up[held] and g.attack[pressed])
-{
-	stateSwitch("attackGroundUp");
-}
-
-if(g.down[held] and g.attack[pressed])
-{
-	stateSwitch("attackGroundDown");
-}
-
-if(g.left[held] and g.attack[pressed] and currentStamina > attackSideStaminaCost)
-{
-	stateSwitch("attackGroundLeft");
-}
-
-if(g.right[held] and g.attack[pressed] and currentStamina > attackSideStaminaCost)
-{
-	stateSwitch("attackGroundRight");
-}
-
 #endregion

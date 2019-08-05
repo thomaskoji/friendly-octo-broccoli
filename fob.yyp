@@ -159,14 +159,6 @@
             }
         },
         {
-            "Key": "25a16713-be6e-4d57-ba07-560deb6c725b",
-            "Value": {
-                "id": "a478cdca-a732-4b42-b984-7f69c89514d0",
-                "resourcePath": "scripts\\player_state_attackGroundLeft\\player_state_attackGroundLeft.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "28c1397a-81ec-47e4-bb97-502b61664827",
             "Value": {
                 "id": "d3c56d54-8873-4009-9537-a141dcc3c2d2",
@@ -231,14 +223,6 @@
             }
         },
         {
-            "Key": "3a2946b7-ed27-40f6-8fb0-49eed995ef1d",
-            "Value": {
-                "id": "c521f699-9b40-406c-8e0d-1019b1e5597e",
-                "resourcePath": "scripts\\player_state_attackGroundDown\\player_state_attackGroundDown.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "3a695771-7156-42c3-9d3e-a57ff34cac4a",
             "Value": {
                 "id": "b9eb8851-c072-41e6-8762-a2b7a2d896f9",
@@ -284,6 +268,14 @@
                 "id": "6a37f3bd-af32-43ef-b247-77445d93006e",
                 "resourcePath": "scripts\\player_state_fall\\player_state_fall.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "461d0dde-32d5-4499-bb0d-b37dc3871312",
+            "Value": {
+                "id": "db266f25-ff6e-4dbe-acbb-6c689bb774cc",
+                "resourcePath": "sprites\\spr_guide\\spr_guide.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -655,14 +647,6 @@
             }
         },
         {
-            "Key": "8c380d13-cdfd-4833-b0b1-e5d64c947d5e",
-            "Value": {
-                "id": "a568888e-97f1-46ed-8e63-d83332a4a950",
-                "resourcePath": "scripts\\player_state_attackGroundUp\\player_state_attackGroundUp.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "8e41dec6-f65f-4233-80ec-2f98c953cdb0",
             "Value": {
                 "id": "122a9135-6f93-4f6d-b7dd-ad3b18215c0a",
@@ -679,11 +663,11 @@
             }
         },
         {
-            "Key": "913edc6e-b7d1-4ce9-9270-1c3d2ade3aba",
+            "Key": "8fc3d673-f663-4615-874c-f6bb495d6073",
             "Value": {
-                "id": "7f974b29-4a24-4404-b2d6-338522911288",
-                "resourcePath": "scripts\\player_state_attackGroundRight\\player_state_attackGroundRight.yy",
-                "resourceType": "GMScript"
+                "id": "f805d12d-d40e-40c0-93cc-bb98e37ff8a0",
+                "resourcePath": "views\\8fc3d673-f663-4615-874c-f6bb495d6073.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1236,10 +1220,6 @@
         "f33a5cbc-6a72-4b17-9e15-4673f128c463",
         "1969b72a-6af3-4280-8c37-1e04023f0a4f",
         "dc86ef4d-ece1-4e8e-bc91-0f245c1d7e33",
-        "8c380d13-cdfd-4833-b0b1-e5d64c947d5e",
-        "3a2946b7-ed27-40f6-8fb0-49eed995ef1d",
-        "25a16713-be6e-4d57-ba07-560deb6c725b",
-        "913edc6e-b7d1-4ce9-9270-1c3d2ade3aba",
         "a9975bb1-bfbf-45de-bd60-5d702c5cacd4",
         "6f310e22-f1e1-4ca5-9716-6956336582d0",
         "98423e6b-bf7e-42ff-b91d-8cb62b3b8c38",

@@ -4,10 +4,9 @@
     "mvc": "1.1",
     "name": "d1e2fc53-6673-4523-8d3d-ee80f6bf2d45",
     "children": [
-        "8c380d13-cdfd-4833-b0b1-e5d64c947d5e",
-        "3a2946b7-ed27-40f6-8fb0-49eed995ef1d",
-        "25a16713-be6e-4d57-ba07-560deb6c725b",
-        "913edc6e-b7d1-4ce9-9270-1c3d2ade3aba"
+        "f33a5cbc-6a72-4b17-9e15-4673f128c463",
+        "1969b72a-6af3-4280-8c37-1e04023f0a4f",
+        "dc86ef4d-ece1-4e8e-bc91-0f245c1d7e33"
     ],
     "filterType": "GMScript",
     "folderName": "attacks",

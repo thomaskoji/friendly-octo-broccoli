@@ -28,27 +28,3 @@ if(velocity[YAXIS] > 0)
 	stateSwitch("fall");
 	jumped = false;
 }
-
-if(g.up[held] and g.attack[pressed])
-{
-	stateSwitch("attackGroundUp");
-	jumped = false;
-}
-
-if(g.down[held] and g.attack[pressed])
-{
-	stateSwitch("attackGroundDown");
-	jumped = false;
-}
-
-if(g.left[held] and g.attack[pressed] and currentStamina > attackSideStaminaCost)
-{
-	stateSwitch("attackGroundLeft");
-	jumped = false;
-}
-
-if(g.right[held] and g.attack[pressed] and currentStamina > attackSideStaminaCost)
-{
-	stateSwitch("attackGroundRight");
-	jumped = false;
-}

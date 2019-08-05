@@ -10,10 +10,7 @@
         "38c80888-7a76-4e1c-bcac-9079121c1bd4",
         "c80093e1-c1d5-4ddf-a758-8997d6987195",
         "441cc19a-88ad-4591-a2ee-cc46cc24e766",
-        "520c2df9-5863-4d92-bf74-113ac17af051",
-        "f33a5cbc-6a72-4b17-9e15-4673f128c463",
-        "1969b72a-6af3-4280-8c37-1e04023f0a4f",
-        "dc86ef4d-ece1-4e8e-bc91-0f245c1d7e33"
+        "520c2df9-5863-4d92-bf74-113ac17af051"
     ],
     "filterType": "GMScript",
     "folderName": "movements",

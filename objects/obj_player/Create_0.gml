@@ -12,10 +12,6 @@ stateAdd("slide", player_state_slide);
 stateAdd("attackA", player_state_attackA);
 stateAdd("attackB", player_state_attackB);
 stateAdd("attackC", player_state_attackC);
-stateAdd("attackGroundUp", player_state_attackGroundUp);
-stateAdd("attackGroundDown", player_state_attackGroundDown);
-stateAdd("attackGroundLeft", player_state_attackGroundLeft);
-stateAdd("attackGroundRight", player_state_attackGroundRight);
 
 stateBeginIn("wait");
 
