@@ -40,7 +40,7 @@ if(g.jump[pressed])
 	stateSwitch("jump");
 }
 
-if(g.attack[pressed] and currentStamina > attackStaminaCost)
+if(g.attack[pressed])
 {
 	stateSwitch("attackA")
 }

@@ -32,7 +32,6 @@ slideFriction		= 0.05;
 slideBoost			= 1;
 
 attackFriction		= 0.2;
-attackGroundUpFriction = .1;
 
 jump_power			= 5;
 fallGravity			= 0.3;
@@ -55,18 +54,8 @@ attackImageSpeed	= 0.2;
 
 #region Attack Properties
 
-
 attackTimer		= 0;
 willAttack		= false;
-
-attackStaminaCost	= 20;
-attackSideStaminaCost = 50;
-
-attackGroundUpVelocity = 20;
-attackGroundUpGravity = 3;
-attackGroundUpMaxGravity = 1;
-
-attackGroundSideVelocity = 8;
 
 #endregion
 

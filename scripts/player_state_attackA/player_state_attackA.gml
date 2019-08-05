@@ -5,7 +5,6 @@ if(state_new)
 	image_index = 0;
 	attackTimer = 0;
 	willAttack	= false;
-	currentStamina -= attackStaminaCost;
 	staminaTimer = 0;
 }
 
@@ -35,7 +34,7 @@ if(g.attack[pressed] and attackTimer < _attack_max_time)
 	willAttack = true;
 }
 
-if(attackTimer >= _attack_max_time and willAttack and currentStamina > attackStaminaCost)
+if(attackTimer >= _attack_max_time and willAttack)
 {
 	stateSwitch("attackB");
 }
