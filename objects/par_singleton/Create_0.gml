@@ -1,5 +1,5 @@
 persistent = true;
-if(object_index != obj_hudController)
+if(object_index != obj_hudController and object_index != obj_mainController)
 {
 	visible = false;
 }
