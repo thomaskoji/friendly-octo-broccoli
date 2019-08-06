@@ -49,16 +49,16 @@ switch global.inputDirection
 
 var _debugString = "";
 _debugString += "FPS " + string(fps) + "\n";
-_debugString += "State " + string(obj_player.state) + "\n";
-_debugString += "X " + string(obj_player.x) + "\n";
-_debugString += "Y " + string(obj_player.y) + "\n";
-_debugString += "Xvel " + string(obj_player.velocity[XAXIS]) + "\n";
-_debugString += "Yvel " + string(obj_player.velocity[YAXIS]) + "\n";
-_debugString += "onGround " + string(obj_player.onGround) + "\n";
-_debugString += "FaceDir " + string(obj_player.face_direction) + "\n";
-_debugString += _dir + "\n";
-_debugString += "VX " + string(camera_get_view_x(view_camera[0])) + "\n";
-_debugString += "VY " + string(camera_get_view_y(view_camera[0])) + "\n";
+if(instance_exists(obj_player))
+{
+	_debugString += "State " + string(obj_player.state) + "\n";
+	_debugString += "X " + string(obj_player.x) + "\n";
+	_debugString += "Y " + string(obj_player.y) + "\n";
+	_debugString += "Xvel " + string(obj_player.velocity[XAXIS]) + "\n";
+	_debugString += "Yvel " + string(obj_player.velocity[YAXIS]) + "\n";
+	_debugString += "onGround " + string(obj_player.onGround) + "\n";
+	_debugString += "FaceDir " + string(obj_player.face_direction) + "\n";
+}
 draw_set_alpha(1);
 draw_text(5,25, _debugString);
 
@@ -66,29 +66,32 @@ draw_text(5,25, _debugString);
 
 #region top left HUD
 
-draw_set_color(c_white);
-draw_set_alpha(.5);
-draw_rectangle(5,5,obj_player.maxHp/2,10,false);
-
-if(obj_player.currentHp != 0)
+if(instance_exists(obj_player))
 {
-	draw_set_color(c_yellow);
-	draw_rectangle(5,5,obj_player.currentHp/2,10,false);
+	draw_set_color(c_white);
+	draw_set_alpha(.5);
+	draw_rectangle(5,5,obj_player.maxHp/2,10,false);
+	
+	if(obj_player.currentHp != 0)
+	{
+		draw_set_color(c_yellow);
+		draw_rectangle(5,5,obj_player.currentHp/2,10,false);
+	}
+	
+	draw_text(105,4,string(obj_player.currentHp));
+	
+	draw_set_color(c_white);
+	draw_set_alpha(.5);
+	draw_rectangle(5,15,5+obj_player.maxStamina*.8,20,false);
+	
+	if(obj_player.currentStamina != 0)
+	{
+		draw_set_color(c_lime);
+		draw_rectangle(5,15,5+obj_player.currentStamina*.8,20,false);
+	}
+	
+	draw_text(90,14,string(obj_player.currentStamina));
 }
-
-draw_text(105,4,string(obj_player.currentHp));
-
-draw_set_color(c_white);
-draw_set_alpha(.5);
-draw_rectangle(5,15,5+obj_player.maxStamina*.8,20,false);
-
-if(obj_player.currentStamina != 0)
-{
-	draw_set_color(c_lime);
-	draw_rectangle(5,15,5+obj_player.currentStamina*.8,20,false);
-}
-
-draw_text(90,14,string(obj_player.currentStamina));
 
 #endregion
 

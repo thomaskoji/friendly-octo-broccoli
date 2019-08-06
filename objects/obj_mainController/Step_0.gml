@@ -14,7 +14,7 @@ if(pause)
 		screen_save("screenShot.png");
 		screenShot = sprite_add("screenShot.png",0,false,false,0,0);
 	}
-    instance_deactivate_all(true);
+    instance_deactivate_layer(layer_get_id("Actors"));
 }
 else
 {
