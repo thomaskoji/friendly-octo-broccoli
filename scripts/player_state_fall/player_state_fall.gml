@@ -4,23 +4,23 @@ if(state_new)
 	{
 		sprite_index = spr_playerFall;
 		image_index = 0;
+		image_speed = defaultImageSpeed;
 	}
 }
 
 scr_applyGravity(fallGravity,fallMaxGravity);
 
-scr_applyXMovement(g.inputHorizontalTotal, runAccel, runMaxSpeed, runFriction);
+scr_applyXMovement(g.inputHorizontalTotal, jumpAccel, jumpMaxSpeed, jumpFriction);
 
 #region state machine
 
 if(velocity[YAXIS] == 0)
-{
-	stateSwitch("wait");
-}
+{	stateSwitch("wait");}
 
 if(g.inputHorizontalTotal != 0 && !g.slide[pressed] && velocity[YAXIS] == 0)
-{
-	stateSwitch("run");
-}
+{	stateSwitch("run");}
+
+if(onWall = g.inputHorizontalTotal)
+{ stateSwitch("wallLatch");}
 
 #endregion

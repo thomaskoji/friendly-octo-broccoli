@@ -1,7 +1,7 @@
 if(state_new)
 {
 	sprite_index = spr_playerAttackC;
-	image_speed = attackImageSpeed;
+	image_speed = defaultImageSpeed;
 	image_index = 0;
 	attackTimer = 0;
 	willAttack	= false;
@@ -11,8 +11,6 @@ if(state_new)
 #region state machine
 
 if (animation_end())
-{
-	stateSwitch("wait");
-}
+{	stateSwitch("wait");}
 
 #endregion

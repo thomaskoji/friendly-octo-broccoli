@@ -1,3 +1,5 @@
+event_inherited();
+
 #region State Machine
 
 stateMachineCreate();
@@ -38,5 +40,3 @@ attackDistance		= 30;
 maxHp = 200;
 currentHp = maxHp;
 damage = 0;
-
-face_direction		=1; //1 right, -1 left

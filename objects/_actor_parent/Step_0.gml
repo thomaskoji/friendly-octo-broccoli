@@ -1,7 +1,5 @@
-if (place_meeting(x, y + 1, _solid_parent))
-{onGround = true;}
-else
-{onGround = false;}
+onGround = place_meeting(x, y + 1, _solid_parent)
+onWall = place_meeting(x+1,y,_solid_parent) - place_meeting(x-1,y,_solid_parent);
 
 stateExecute();
 scr_objectUpdateLocation();

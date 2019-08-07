@@ -1,3 +1,5 @@
+event_inherited();
+
 #region State Machine
 
 stateMachineCreate();
@@ -9,6 +11,9 @@ stateAdd("jump", player_state_jump);
 stateAdd("backflip", player_state_backflip);
 stateAdd("fall", player_state_fall);
 stateAdd("slide", player_state_slide);
+stateAdd("wallLatch", player_state_wallLatch);
+stateAdd("wallJump", player_state_wallJump);
+stateAdd("push", player_state_push);
 stateAdd("attackA", player_state_attackA);
 stateAdd("attackB", player_state_attackB);
 stateAdd("attackC", player_state_attackC);
@@ -24,31 +29,31 @@ velocity[XAXIS]		= 0;
 
 waitFriction		= .5;
 
-runMaxSpeed			= 3;
-runFriction			= 0.2;
-runAccel			= 0.15;
+runMaxSpeed			= 4;
+runFriction			= .3;
+runAccel			= .2;
 
-slideFriction		= 0.05;
-slideBoost			= 1;
+slideFriction		= .05;
+slideBoost			= 2;
 
-attackFriction		= 0.2;
+attackFriction		= .2;
 
-jump_power			= 5;
-fallGravity			= 0.3;
-fallMaxGravity		= 10;
+jumpPower			= 5;
+jumpMaxSpeed		= 3;
+jumpFriction		= .1;
+jumpAccel			= .1;
 jumped				= false;
-onGround			= false;
 
-face_direction		=1; //1 right, -1 left
+fallGravity			= .3;
+fallMaxGravity		= 10;
+
+wallLatchMaxGravity	= 1;
 
 #endregion
 
 #region Image Properties
 
-waitImageSpeed		= 0.2;
-runImageSpeed		= 0.2;
-jumpImageSpeed		= 0.2;
-attackImageSpeed	= 0.2;
+defaultImageSpeed	= .2;
 
 #endregion
 

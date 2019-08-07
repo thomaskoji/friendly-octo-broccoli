@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "13bf4e9d-f15f-4084-8cb4-95a8451cb638",
+            "Value": {
+                "id": "5276cd19-4504-4ae0-a9af-42852f8e09b4",
+                "resourcePath": "scripts\\player_state_push\\player_state_push.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "152c1624-25af-459b-b3a5-fafb9507e493",
             "Value": {
                 "id": "39c4bd1b-44df-4226-9cd7-2a9e0b67465a",
@@ -423,6 +431,14 @@
             }
         },
         {
+            "Key": "5f2a383f-c5d0-43ef-ada6-859c66904706",
+            "Value": {
+                "id": "c3dde07a-9fde-4579-806f-4953f7b49842",
+                "resourcePath": "scripts\\player_state_wallLatch\\player_state_wallLatch.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5ff8296a-cbe5-4762-947a-e1f0ed7c0fc4",
             "Value": {
                 "id": "c4cd7c90-b935-4240-b541-6f6cd45bf1f0",
@@ -620,6 +636,14 @@
                 "id": "bc0ea0c9-873d-4fc5-9742-1b90a19ff29b",
                 "resourcePath": "sprites\\spr_playerAttackA\\spr_playerAttackA.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "85cbf1c6-764d-44b0-9f3a-10b5634f6694",
+            "Value": {
+                "id": "f24db28b-52b5-43cc-a086-8ef878710da1",
+                "resourcePath": "scripts\\player_state_wallJump\\player_state_wallJump.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -892,6 +916,14 @@
                 "id": "6f075f4c-fb85-4575-ac92-0469ac2a2786",
                 "resourcePath": "scripts\/place_meeting_rounded\/place_meeting_rounded.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c68969bd-9b74-4dfa-8f7c-d6c227ce54ec",
+            "Value": {
+                "id": "02b6c145-5c83-4a80-89f6-8d66014cccef",
+                "resourcePath": "sprites\\spr_playerWallLatch\\spr_playerWallLatch.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1209,6 +1241,9 @@
         "c80093e1-c1d5-4ddf-a758-8997d6987195",
         "441cc19a-88ad-4591-a2ee-cc46cc24e766",
         "520c2df9-5863-4d92-bf74-113ac17af051",
+        "5f2a383f-c5d0-43ef-ada6-859c66904706",
+        "85cbf1c6-764d-44b0-9f3a-10b5634f6694",
+        "13bf4e9d-f15f-4084-8cb4-95a8451cb638",
         "f33a5cbc-6a72-4b17-9e15-4673f128c463",
         "1969b72a-6af3-4280-8c37-1e04023f0a4f",
         "dc86ef4d-ece1-4e8e-bc91-0f245c1d7e33",

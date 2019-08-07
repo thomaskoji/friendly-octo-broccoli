@@ -4,6 +4,7 @@ if(state_new)
 	sprite_index = spr_playerBrake;
 	face_direction = state_var[0];
 	image_index = 0;
+	image_speed = defaultImageSpeed;
 }
 
 if(g.inputDirection == no_direction)
@@ -14,16 +15,10 @@ if(g.inputDirection == no_direction)
 var _changed_direction = (velocity[XAXIS] >= 0 && state_var[0] == -1) || (velocity[XAXIS] <= 0 && state_var[0] == 1);
 var _slide_cancelled = (global.inputHorizontalTotal == 1 && state_var[0] == 1) || (global.inputHorizontalTotal == -1 && state_var[0]==-1);
 if(_changed_direction || _slide_cancelled)
-{
-	stateSwitch("run");
-}
+{	stateSwitch("run");}
 
 if(!onGround)
-{
-	stateSwitch("fall");
-}
+{	stateSwitch("fall");}
 
 if(g.jump[pressed])
-{
-	stateSwitch("backflip");
-}
+{	stateSwitch("backflip");}
