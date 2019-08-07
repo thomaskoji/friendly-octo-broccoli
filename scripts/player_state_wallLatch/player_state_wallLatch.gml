@@ -12,7 +12,11 @@ scr_applyGravity(fallGravity,wallLatchMaxGravity);
 if(onWall != g.inputHorizontalTotal)
 {	stateSwitch("fall");}
 
+if(g.jump[pressed])
+{	stateSwitch("wallJump");}
+
 if(onGround)
 {	stateSwitch("wait");}
+
 
 #endregion

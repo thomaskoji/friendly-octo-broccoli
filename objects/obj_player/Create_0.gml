@@ -39,7 +39,7 @@ slideBoost			= 2;
 attackFriction		= .2;
 
 jumpPower			= 5;
-jumpMaxSpeed		= 3;
+jumpMaxSpeed		= 4;
 jumpFriction		= .1;
 jumpAccel			= .1;
 jumped				= false;
