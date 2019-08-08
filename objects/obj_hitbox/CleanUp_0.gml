@@ -1,1 +1,1 @@
-ds_list_destroy(hitObjects);
+ds_list_destroy(collisionList);

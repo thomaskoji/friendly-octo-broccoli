@@ -2,4 +2,4 @@ creator = noone;
 knockback = 0;
 damage = 0;
 
-hitObjects = ds_list_create();
+collisionList = ds_list_create();
