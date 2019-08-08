@@ -1,9 +1,7 @@
 #region pause menu
 if(pause)
 {
-	var _vx = camera_get_view_x(view_camera[0]);
-	var _vy = camera_get_view_y(view_camera[0])
-	draw_sprite_ext(screenShot,0,0,0,1,1,0,c_white,1);
+	draw_sprite_stretched(screenShot,0,0,0,obj_displayController.ideal_width,obj_displayController.ideal_height);
 	draw_set_color(c_black);
 	draw_set_alpha(.5);
 	draw_rectangle(0,0,room_width,room_height,0);
