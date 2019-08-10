@@ -8,6 +8,9 @@ if(state_new)
 	}
 }
 
+if(velocity[XAXIS] != 0)
+{	face_direction = sign(velocity[XAXIS]);}
+
 scr_applyGravity(fallGravity,fallMaxGravity);
 
 scr_applyXMovement(g.inputHorizontalTotal, jumpAccel, jumpMaxSpeed, jumpFriction);
@@ -20,7 +23,7 @@ if(velocity[YAXIS] == 0)
 if(g.inputHorizontalTotal != 0 && !g.slide[pressed] && velocity[YAXIS] == 0)
 {	stateSwitch("run");}
 
-if(onWall = g.inputHorizontalTotal)
+if(onWall != 0 and onWall = g.inputHorizontalTotal)
 { stateSwitch("wallLatch");}
 
 #endregion

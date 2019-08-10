@@ -7,6 +7,9 @@ if(state_new)
 	velocity[YAXIS] -= 4;
 }
 
+if(velocity[XAXIS] != 0)
+{	face_direction = sign(velocity[XAXIS]);}
+
 scr_applyGravity(fallGravity,fallMaxGravity);
 
 scr_applyXMovement(g.inputHorizontalTotal, jumpAccel, jumpMaxSpeed, jumpFriction);

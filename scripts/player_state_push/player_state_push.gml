@@ -9,3 +9,6 @@ if(state_new)
 
 if(g.inputHorizontalTotal != face_direction)
 {	stateSwitch("run");}
+
+if(g.jump[pressed])
+{	stateSwitch("jump");}

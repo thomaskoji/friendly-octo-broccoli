@@ -29,8 +29,8 @@ velocity[XAXIS]		= 0;
 
 waitFriction		= .5;
 
-runMaxSpeed			= 4;
-runFriction			= .3;
+runMaxSpeed			= 5;
+runFriction			= .25;
 runAccel			= .2;
 
 slideFriction		= .05;
@@ -39,7 +39,7 @@ slideBoost			= 2;
 attackFriction		= .2;
 
 jumpPower			= 5;
-jumpMaxSpeed		= 4;
+jumpMaxSpeed		= 5;
 jumpFriction		= .1;
 jumpAccel			= .1;
 jumped				= false;

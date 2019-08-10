@@ -9,7 +9,7 @@ scr_applyGravity(fallGravity,wallLatchMaxGravity);
 
 #region state machine
 
-if(onWall != g.inputHorizontalTotal)
+if(onWall != g.inputHorizontalTotal or onWall = 0)
 {	stateSwitch("fall");}
 
 if(g.jump[pressed])
