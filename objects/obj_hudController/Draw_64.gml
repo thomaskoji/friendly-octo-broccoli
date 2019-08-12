@@ -83,10 +83,10 @@ draw_set_valign(fa_top);
 draw_set_colour($e4924f);
 var _tutorialString = "";
 _tutorialString += "wasd to move" + "\n";
-_tutorialString += "mouse 1 to attack" + "\n";
-_tutorialString += "wasd + attack = special attacks" + "\n";
+_tutorialString += "space to jump" + "\n";
+_tutorialString += "control to slide" + "\n";
 draw_set_alpha(1);
-draw_text(room_width-5,5, _tutorialString);
+draw_text(obj_displayController.ideal_width-5,5, _tutorialString);
 
 #endregion
 

@@ -26,4 +26,8 @@ if(g.inputHorizontalTotal != 0 && !g.slide[pressed] && velocity[YAXIS] == 0)
 if(onWall != 0 and onWall = g.inputHorizontalTotal)
 { stateSwitch("wallLatch");}
 
+if(g.jump[pressed] and onWall != 0)
+{	stateSwitch("wallJump");}
+
+
 #endregion
