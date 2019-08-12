@@ -19,8 +19,16 @@ if(animation_end())
 if (state_var[0] = false and g.jump[held] == false)
 {	velocity[YAXIS] *= 0.9;}
 
+
+#region state machine
+
 if(velocity[YAXIS] > 0)
 {
 	stateSwitch("fall");
 	jumped = false;
 }
+
+if(g.jump[pressed] and onWall != 0)
+{	stateSwitch("wallJump");}
+
+#endregion

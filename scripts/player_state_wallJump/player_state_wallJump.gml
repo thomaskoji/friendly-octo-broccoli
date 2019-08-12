@@ -3,8 +3,8 @@ if(state_new)
 	image_speed = defaultImageSpeed;
 	sprite_index = spr_playerJump;
 	image_index = 0;
-	velocity[XAXIS] += 4 * -face_direction;
-	velocity[YAXIS] -= 4;
+	velocity[XAXIS] += wallJumpXSpeed * -face_direction;
+	velocity[YAXIS] -= wallJumpYSpeed;
 }
 
 if(velocity[XAXIS] != 0)

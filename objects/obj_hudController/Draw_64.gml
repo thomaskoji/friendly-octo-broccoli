@@ -45,25 +45,6 @@ switch global.inputDirection
 }
 #endregion
 
-#region debug string
-
-var _debugString = "";
-_debugString += "FPS " + string(fps) + "\n";
-if(instance_exists(obj_player))
-{
-	_debugString += "State " + string(obj_player.state) + "\n";
-	_debugString += "X " + string(obj_player.x) + "\n";
-	_debugString += "Y " + string(obj_player.y) + "\n";
-	_debugString += "Xvel " + string(obj_player.velocity[XAXIS]) + "\n";
-	_debugString += "Yvel " + string(obj_player.velocity[YAXIS]) + "\n";
-	_debugString += "onGround " + string(obj_player.onGround) + "\n";
-	_debugString += "FaceDir " + string(obj_player.face_direction) + "\n";
-}
-draw_set_alpha(1);
-draw_text(5,25, _debugString);
-
-#endregion
-
 #region top left HUD
 
 if(instance_exists(obj_player))
@@ -106,5 +87,26 @@ _tutorialString += "mouse 1 to attack" + "\n";
 _tutorialString += "wasd + attack = special attacks" + "\n";
 draw_set_alpha(1);
 draw_text(room_width-5,5, _tutorialString);
+
+#endregion
+
+#region debug string
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+var _debugString = "";
+_debugString += "FPS " + string(fps) + "\n";
+if(instance_exists(obj_player))
+{
+	_debugString += "State " + string(obj_player.state) + "\n";
+	_debugString += "X " + string(obj_player.x) + "\n";
+	_debugString += "Y " + string(obj_player.y) + "\n";
+	_debugString += "Xvel " + string(obj_player.velocity[XAXIS]) + "\n";
+	_debugString += "Yvel " + string(obj_player.velocity[YAXIS]) + "\n";
+	_debugString += "onGround " + string(obj_player.onGround) + "\n";
+	_debugString += "onWall " + string(obj_player.onWall) + "\n";
+	_debugString += "FaceDir " + string(obj_player.face_direction) + "\n";
+}
+draw_set_alpha(1);
+draw_text(5,25, _debugString);
 
 #endregion

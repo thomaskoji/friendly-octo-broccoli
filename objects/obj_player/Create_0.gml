@@ -44,8 +44,11 @@ jumpFriction		= .1;
 jumpAccel			= .1;
 jumped				= false;
 
+wallJumpXSpeed		= 4;
+wallJumpYSpeed		= 6;
+
 fallGravity			= .3;
-fallMaxGravity		= 10;
+fallMaxGravity		= 5;
 
 wallLatchMaxGravity	= 1;
 
