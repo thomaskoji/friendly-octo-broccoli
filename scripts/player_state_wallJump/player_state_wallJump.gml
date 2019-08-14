@@ -3,7 +3,7 @@ if(state_new)
 	image_speed = defaultImageSpeed;
 	sprite_index = spr_playerJump;
 	image_index = 0;
-	velocity[XAXIS] += wallJumpXSpeed * -face_direction;
+	velocity[XAXIS] += wallJumpXSpeed * -onWall;
 	velocity[YAXIS] -= wallJumpYSpeed;
 	wallJumpRestrictionTimer = 1 * room_speed;
 }

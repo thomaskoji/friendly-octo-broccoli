@@ -69,4 +69,4 @@ staminaTimer	= 0;
 
 #endregion
 
-wallJumpRestrictionTimer = 1 * room_speed;
+wallJumpRestrictionTimer = .5 * room_speed;
