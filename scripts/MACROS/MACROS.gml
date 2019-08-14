@@ -1,8 +1,14 @@
 #macro NULLVALUE -99999
 #macro g global
+
 //Velocity
 #macro XAXIS 0
 #macro YAXIS 1
+
+//Input
+#macro held 0
+#macro pressed 1
+#macro released 2
 
 //Direction
 #macro no_direction -1
@@ -15,7 +21,19 @@
 #macro south 270
 #macro south_east 315
 
-//Input
-#macro held 0
-#macro pressed 1
-#macro released 2
+enum optionsGridProperties
+{
+	name,
+	script,
+	argument_to_pass,
+	displays_value,
+	button_type,
+	enum_size
+}
+
+enum buttonTypes
+{
+	toggle,
+	slider,
+	enum_size
+}

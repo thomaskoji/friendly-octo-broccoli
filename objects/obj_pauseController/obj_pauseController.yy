@@ -1,34 +1,44 @@
 {
-    "id": "41c68bbf-f9fe-4dbd-bf72-a4bbdb2b8682",
+    "id": "316708b0-1e57-476f-b469-48ee2fb06634",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_mainController",
+    "name": "obj_pauseController",
     "eventList": [
         {
-            "id": "7a7221f6-d02f-43cc-8e1e-17aa876490da",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "41c68bbf-f9fe-4dbd-bf72-a4bbdb2b8682"
-        },
-        {
-            "id": "0a73cf5b-fcb8-4d75-a33e-71998d67ef06",
+            "id": "f7d8a971-3f85-474e-8f61-810eaa52e3a5",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "41c68bbf-f9fe-4dbd-bf72-a4bbdb2b8682"
+            "m_owner": "316708b0-1e57-476f-b469-48ee2fb06634"
+        },
+        {
+            "id": "edb8a956-85c2-40d2-b3b6-5df7c66c50db",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "316708b0-1e57-476f-b469-48ee2fb06634"
+        },
+        {
+            "id": "4e3070b0-082e-490d-b573-3262d519ae29",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 64,
+            "eventtype": 8,
+            "m_owner": "316708b0-1e57-476f-b469-48ee2fb06634"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "d4c64dda-5f75-4c83-ba94-be9626504ce9",
-    "persistent": true,
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,

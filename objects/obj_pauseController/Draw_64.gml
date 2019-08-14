@@ -1,7 +1,7 @@
 #region pause menu
 if(pause)
 {
-	draw_sprite_stretched(screenShot,0,0,0,obj_displayController.ideal_width,obj_displayController.ideal_height);
+	//draw_sprite_stretched(screenShot,0,0,0,obj_displayController.ideal_width,obj_displayController.ideal_height);
 	draw_set_color(c_black);
 	draw_set_alpha(.5);
 	draw_rectangle(0,0,room_width,room_height,0);

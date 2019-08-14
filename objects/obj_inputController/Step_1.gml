@@ -50,6 +50,13 @@ if(keyboard_check(slideKey))
 	g.slide[held]++;
 else
 	g.slide[held]=0;
+	
+g.enter[pressed] = keyboard_check_pressed(enterKey);
+g.enter[released] = keyboard_check_released(enterKey);
+if(keyboard_check(enterKey))
+	g.enter[held]++;
+else
+	g.enter[held]=0;
 
 
 //--------------------- input direction code ------------------------//
