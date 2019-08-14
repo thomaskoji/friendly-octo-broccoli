@@ -5,14 +5,20 @@ if(state_new)
 	image_index = 0;
 	velocity[XAXIS] += wallJumpXSpeed * -face_direction;
 	velocity[YAXIS] -= wallJumpYSpeed;
+	wallJumpRestrictionTimer = 1 * room_speed;
 }
+
+wallJumpRestrictionTimer --;
 
 if(velocity[XAXIS] != 0)
 {	face_direction = sign(velocity[XAXIS]);}
 
 scr_applyGravity(fallGravity,fallMaxGravity);
 
-scr_applyXMovement(g.inputHorizontalTotal, jumpAccel, jumpMaxSpeed, jumpFriction);
+if(wallJumpRestrictionTimer < 0)
+{
+	scr_applyXMovement(g.inputHorizontalTotal, jumpAccel, jumpMaxSpeed, jumpFriction);
+}
 
 if(animation_end())
 {	image_index = image_number - 1;}
@@ -22,6 +28,12 @@ if(animation_end())
 if(velocity[YAXIS] > 0)
 {
 	stateSwitch("fall");
+}
+
+if(g.jump[pressed] and onWall != 0)
+{
+	stateSwitch("wallJump");
+	jumped = false;
 }
 
 #endregion

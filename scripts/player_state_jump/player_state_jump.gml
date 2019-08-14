@@ -4,7 +4,7 @@ if(state_new and !jumped)
 	sprite_index = spr_playerJump;
 	image_index = 0;
 	image_speed = defaultImageSpeed;
-	jumped = true;
+	jumped = true; // ADD JUMPED = FALSE TO EVERY NEW SWITCH STATE STATEMENT
 	state_var[0] = false; // player has let go of jump
 }
 
@@ -29,6 +29,9 @@ if(velocity[YAXIS] > 0)
 }
 
 if(g.jump[pressed] and onWall != 0)
-{	stateSwitch("wallJump");}
+{
+	stateSwitch("wallJump");
+	jumped = false;
+}
 
 #endregion

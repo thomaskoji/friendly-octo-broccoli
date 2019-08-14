@@ -135,14 +135,6 @@
             }
         },
         {
-            "Key": "1969b72a-6af3-4280-8c37-1e04023f0a4f",
-            "Value": {
-                "id": "99ad5dc4-917c-495f-93dc-b162711c642d",
-                "resourcePath": "scripts\\player_state_attackB\\player_state_attackB.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "1d14989d-9961-4e95-825c-3f79b46db7fb",
             "Value": {
                 "id": "2d3ada79-5481-4c79-8dee-2278f5842532",
@@ -380,14 +372,6 @@
                 "id": "1418a97a-2b43-4093-a140-977cfe1ab2a0",
                 "resourcePath": "sprites\\spr_skeltonIdle\\spr_skeltonIdle.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "532b128a-592a-436f-95f1-3d9998cdc64e",
-            "Value": {
-                "id": "42dd6d68-644e-4fd1-9701-4ec10f28e698",
-                "resourcePath": "shaders\\sh_outline\\sh_outline.yy",
-                "resourceType": "GMShader"
             }
         },
         {
@@ -1023,14 +1007,6 @@
             }
         },
         {
-            "Key": "d1e2fc53-6673-4523-8d3d-ee80f6bf2d45",
-            "Value": {
-                "id": "688d2243-85e2-4872-986f-e7ba127a4dd5",
-                "resourcePath": "views\\d1e2fc53-6673-4523-8d3d-ee80f6bf2d45.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "d4c64dda-5f75-4c83-ba94-be9626504ce9",
             "Value": {
                 "id": "af91c641-6c74-4305-aca6-af68dbe37a12",
@@ -1068,14 +1044,6 @@
                 "id": "6ea540dd-ed81-413b-90d6-6c64dcfc910b",
                 "resourcePath": "views\/d9394b8b-035c-4f3a-b5c0-1efd2bcd1b28.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "dc86ef4d-ece1-4e8e-bc91-0f245c1d7e33",
-            "Value": {
-                "id": "9c3c8cbb-0e30-4dbc-af73-fbb33c76332d",
-                "resourcePath": "scripts\\player_state_attackC\\player_state_attackC.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -1156,14 +1124,6 @@
                 "id": "7ca3b71a-3408-48df-ae4a-d9f7c2dc1ec1",
                 "resourcePath": "views\/ec0d6ae3-b8e9-49b1-abbc-f1694c74d1f8.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "f33a5cbc-6a72-4b17-9e15-4673f128c463",
-            "Value": {
-                "id": "1f2633fd-9f66-4e55-a356-4e8c4e76334a",
-                "resourcePath": "scripts\\player_state_attackA\\player_state_attackA.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -1252,9 +1212,6 @@
         "5f2a383f-c5d0-43ef-ada6-859c66904706",
         "85cbf1c6-764d-44b0-9f3a-10b5634f6694",
         "13bf4e9d-f15f-4084-8cb4-95a8451cb638",
-        "f33a5cbc-6a72-4b17-9e15-4673f128c463",
-        "1969b72a-6af3-4280-8c37-1e04023f0a4f",
-        "dc86ef4d-ece1-4e8e-bc91-0f245c1d7e33",
         "a9975bb1-bfbf-45de-bd60-5d702c5cacd4",
         "6f310e22-f1e1-4ca5-9716-6956336582d0",
         "98423e6b-bf7e-42ff-b91d-8cb62b3b8c38",

@@ -14,9 +14,6 @@ stateAdd("slide", player_state_slide);
 stateAdd("wallLatch", player_state_wallLatch);
 stateAdd("wallJump", player_state_wallJump);
 stateAdd("push", player_state_push);
-stateAdd("attackA", player_state_attackA);
-stateAdd("attackB", player_state_attackB);
-stateAdd("attackC", player_state_attackC);
 
 stateBeginIn("wait");
 
@@ -60,13 +57,6 @@ defaultImageSpeed	= .2;
 
 #endregion
 
-#region Attack Properties
-
-attackTimer		= 0;
-willAttack		= false;
-
-#endregion
-
 #region Stats
 
 maxHp = 200;
@@ -78,3 +68,5 @@ staminaCooldown	= 50;
 staminaTimer	= 0;
 
 #endregion
+
+wallJumpRestrictionTimer = 1 * room_speed;

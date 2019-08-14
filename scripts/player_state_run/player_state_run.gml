@@ -31,8 +31,4 @@ if(!onGround)
 
 if(g.jump[pressed])
 {	stateSwitch("jump");}
-
-if(g.attack[pressed])
-{	stateSwitch("attackA")}
-
 #endregion
