@@ -5,7 +5,6 @@ if(state_new and !jumped)
 	image_index = 0;
 	image_speed = defaultImageSpeed;
 	jumped = true; // ADD JUMPED = FALSE TO EVERY NEW SWITCH STATE STATEMENT
-	state_var[0] = false; // player has let go of jump
 }
 
 scr_applyGravity(fallGravity,fallMaxGravity);
@@ -16,7 +15,7 @@ if(animation_end())
 {	image_index = image_number - 1;}
 
 // when player releases jump
-if (state_var[0] = false and g.jump[held] == false)
+if (g.jump[held] == false)
 {	velocity[YAXIS] *= 0.9;}
 
 
@@ -31,6 +30,12 @@ if(velocity[YAXIS] > 0)
 if(g.jump[pressed] and onWall != 0)
 {
 	stateSwitch("wallJump");
+	jumped = false;
+}
+
+if(animation_hit_frame(1) and onGround)
+{
+	stateSwitch("wait");
 	jumped = false;
 }
 
