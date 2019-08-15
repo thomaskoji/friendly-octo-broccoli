@@ -842,7 +842,7 @@
             "Key": "adead1f8-f7ae-42ea-9cb0-6675d90500cc",
             "Value": {
                 "id": "8d52fbfb-6c89-4bae-b9e5-41b4f9cd3912",
-                "resourcePath": "objects\\obj_oneWayPlatform\\obj_oneWayPlatform.yy",
+                "resourcePath": "objects\\obj_platform\\obj_platform.yy",
                 "resourceType": "GMObject"
             }
         },

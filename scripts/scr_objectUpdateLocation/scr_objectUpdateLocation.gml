@@ -34,4 +34,20 @@ if(place_meeting(x, y + velocity[YAXIS], _solid_parent))
 	}
 	velocity[YAXIS] = 0;
 }
+
+//Vertical platforms
+if(sign(velocity[YAXIS]) > 0)
+{
+	if(place_meeting(x,y + velocity[YAXIS], obj_platform))
+	{
+		if(velocity[YAXIS] < 0) {	y = ceil(y);}
+		else if(velocity[YAXIS] > 0) {	y = floor(y);}
+		
+		while(!place_meeting(x,y+sign(velocity[YAXIS]), obj_platform))
+		{
+			y += sign(velocity[YAXIS]);
+		}
+		velocity[YAXIS] = 0;
+	}
+}
 y += velocity[YAXIS];
