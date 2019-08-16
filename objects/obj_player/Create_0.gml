@@ -13,6 +13,7 @@ stateAdd("fall", player_state_fall);
 stateAdd("slide", player_state_slide);
 stateAdd("wallLatch", player_state_wallLatch);
 stateAdd("wallJump", player_state_wallJump);
+stateAdd("wallRun", player_state_wallRun);
 stateAdd("push", player_state_push);
 
 stateBeginIn("wait");
@@ -41,11 +42,14 @@ jumpFriction		= .1;
 jumpAccel			= .1;
 jumped				= false;
 
+fallGravity			= .3;
+fallMaxGravity		= 5;
+
 wallJumpXSpeed		= 4;
 wallJumpYSpeed		= 6;
 
-fallGravity			= .3;
-fallMaxGravity		= 5;
+wallRunGravity		= .25;
+wallRunBoost		= 1.5;
 
 wallLatchMaxGravity	= 1;
 

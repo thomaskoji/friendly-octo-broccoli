@@ -39,4 +39,10 @@ if(animation_hit_frame(1) and onGround)
 	jumped = false;
 }
 
+if(onWall != 0 and onWall = g.inputHorizontalTotal)
+{
+	stateSwitch("wallRun");
+	jumped = false;
+}
+
 #endregion
