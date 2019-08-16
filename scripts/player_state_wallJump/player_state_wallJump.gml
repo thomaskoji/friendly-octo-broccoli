@@ -30,6 +30,9 @@ if(velocity[YAXIS] > 0)
 	stateSwitch("fall");
 }
 
+if(onWall != 0 and onWall = g.inputHorizontalTotal)
+{ stateSwitch("wallLatch");}
+
 if(g.jump[pressed] and onWall != 0)
 {
 	stateSwitch("wallJump");

@@ -46,10 +46,10 @@ fallGravity			= .3;
 fallMaxGravity		= 5;
 
 wallJumpXSpeed		= 4;
-wallJumpYSpeed		= 6;
+wallJumpYSpeed		= 5;
 
 wallRunGravity		= .25;
-wallRunBoost		= 1.5;
+wallRunBoost		= 1;
 
 wallLatchMaxGravity	= 1;
 
