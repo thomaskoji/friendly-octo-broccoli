@@ -36,7 +36,6 @@ if(onWall != 0 and onWall = g.inputHorizontalTotal)
 if(g.jump[pressed] and onWall != 0)
 {
 	stateSwitch("wallJump");
-	jumped = false;
 }
 
 #endregion
