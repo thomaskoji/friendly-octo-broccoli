@@ -8,6 +8,15 @@ if(state_new)
 	}
 }
 
+if(onGroundTimer > 0)
+{
+	if(g.jump[pressed])
+	{	
+		stateSwitch("jump");
+		onGroundTimer = 0;
+	}		
+}
+
 if(velocity[XAXIS] != 0)
 {	face_direction = sign(velocity[XAXIS]);}
 

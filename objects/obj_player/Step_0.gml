@@ -1,2 +1,2 @@
 event_inherited();
-scr_updateStats();
+scr_onGroundTimer();

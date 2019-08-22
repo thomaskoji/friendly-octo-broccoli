@@ -9,7 +9,7 @@ if(state_new and !jumped)
 
 scr_applyGravity(fallGravity,fallMaxGravity);
 
-scr_applyXMovement(g.inputHorizontalTotal, jumpAccel, jumpMaxSpeed, jumpFriction);
+scr_applyXMovement(g.inputHorizontalTotal, jumpAccel, runMaxSpeed, jumpFriction);
 
 if(animation_end())
 {	image_index = image_number - 1;}

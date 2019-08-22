@@ -27,9 +27,9 @@ velocity[XAXIS]		= 0;
 
 waitFriction		= .5;
 
-runMaxSpeed			= 5;
-runFriction			= .25;
-runAccel			= .2;
+runMaxSpeed			= 4;
+runFriction			= .3;
+runAccel			= .5;
 
 slideFriction		= .05;
 slideBoost			= 2;
@@ -74,3 +74,5 @@ staminaTimer	= 0;
 #endregion
 
 wallJumpRestrictionTimer = .5 * room_speed;
+coyoteTime = 5;
+onGroundTimer = coyoteTime;
