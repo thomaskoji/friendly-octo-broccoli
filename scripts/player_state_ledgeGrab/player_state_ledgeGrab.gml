@@ -36,7 +36,7 @@ switch state_var[0]
 			var _bboxHeight = bbox_bottom - bbox_top;
 			var _bboxWidth = bbox_right - bbox_left;
 			
-			x += _bboxWidth * face_direction;
+			x += (_bboxWidth + 1) * face_direction;
 			y -= _bboxHeight;
 			state_var[0] += 1;
 			state_var[1] = 0; // reset timer

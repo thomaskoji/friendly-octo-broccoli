@@ -18,5 +18,7 @@ if(g.jump[pressed])
 if(onGround)
 {	stateSwitch("wait");}
 
+scr_ledgeGrabStateSwitch();
+
 
 #endregion
