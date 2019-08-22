@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "715b426c-dfc7-4ac6-8686-d10d8b7023bc",
+            "Value": {
+                "id": "418915d6-d274-4b81-90d9-1b0ba7637fe8",
+                "resourcePath": "sprites\\spr_playerLedgeGrab\\spr_playerLedgeGrab.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "73287b8e-c651-44f9-81ef-83b1ba7bc56a",
             "Value": {
                 "id": "a8734102-8d98-4db1-a9e6-8231c2b3b793",
@@ -711,6 +719,14 @@
             }
         },
         {
+            "Key": "8e019430-d84d-4191-a492-70234b2585c9",
+            "Value": {
+                "id": "26994cc3-9453-4da4-a941-dfba77efda2e",
+                "resourcePath": "scripts\\scr_ledgeGrabStateSwitch\\scr_ledgeGrabStateSwitch.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8e41dec6-f65f-4233-80ec-2f98c953cdb0",
             "Value": {
                 "id": "122a9135-6f93-4f6d-b7dd-ad3b18215c0a",
@@ -828,14 +844,6 @@
                 "id": "51aa0f3e-28d3-421f-8dbc-3014d64d9195",
                 "resourcePath": "options\/linux\/options_linux.yy",
                 "resourceType": "GMLinuxOptions"
-            }
-        },
-        {
-            "Key": "a9975bb1-bfbf-45de-bd60-5d702c5cacd4",
-            "Value": {
-                "id": "7d11e588-a26a-4884-893a-20ec3fa69f18",
-                "resourcePath": "scripts\\scr_updateStats\\scr_updateStats.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -1175,6 +1183,14 @@
             }
         },
         {
+            "Key": "e54229f1-e673-44d4-a6f1-5591fd8b32e5",
+            "Value": {
+                "id": "d2200b3f-7540-4b0a-b427-def844d85a1c",
+                "resourcePath": "scripts\\player_state_ledgeGrab\\player_state_ledgeGrab.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e70101c3-9841-44bf-9b44-92f559ff2050",
             "Value": {
                 "id": "14c2b20c-af17-4cd9-95d6-1a57f0c65dd6",
@@ -1340,8 +1356,9 @@
         "5f2a383f-c5d0-43ef-ada6-859c66904706",
         "85cbf1c6-764d-44b0-9f3a-10b5634f6694",
         "0783c69f-daf3-46c8-b19e-4396817e702e",
+        "e54229f1-e673-44d4-a6f1-5591fd8b32e5",
         "13bf4e9d-f15f-4084-8cb4-95a8451cb638",
-        "a9975bb1-bfbf-45de-bd60-5d702c5cacd4",
+        "8e019430-d84d-4191-a492-70234b2585c9",
         "6f310e22-f1e1-4ca5-9716-6956336582d0",
         "98423e6b-bf7e-42ff-b91d-8cb62b3b8c38",
         "7d5dc015-7176-4aa2-a55b-6c93081aae18",

@@ -14,6 +14,7 @@ stateAdd("slide", player_state_slide);
 stateAdd("wallLatch", player_state_wallLatch);
 stateAdd("wallJump", player_state_wallJump);
 stateAdd("wallRun", player_state_wallRun);
+stateAdd("ledgeGrab", player_state_ledgeGrab);
 stateAdd("push", player_state_push);
 
 stateBeginIn("wait");
@@ -29,7 +30,7 @@ waitFriction		= .5;
 
 runMaxSpeed			= 4;
 runFriction			= .3;
-runAccel			= .5;
+runAccel			= .3;
 
 slideFriction		= .05;
 slideBoost			= 2;
@@ -58,18 +59,6 @@ wallLatchMaxGravity	= 1;
 #region Image Properties
 
 defaultImageSpeed	= .2;
-
-#endregion
-
-#region Stats
-
-maxHp = 200;
-currentHp = maxHp;
-
-maxStamina		= 100;
-currentStamina	= 100;
-staminaCooldown	= 50;
-staminaTimer	= 0;
 
 #endregion
 

@@ -2,13 +2,13 @@
 if(place_meeting(x + velocity[XAXIS], y, _solid_parent))
 {
 	var _yplus = 0;
-	while(place_meeting(x + velocity[XAXIS], y - _yplus, _solid_parent) && _yplus <= abs(1 * velocity[XAXIS]))
+	while(place_meeting(x + velocity[XAXIS], y - _yplus, _solid_parent) && _yplus <= abs(1 * velocity[XAXIS]) && onGround)
 	{
 		++_yplus; 
 	}
 	if (place_meeting(x + velocity[XAXIS], y - _yplus, _solid_parent))
 	{
-			while(!place_meeting(x + sign(velocity[XAXIS]), y, _solid_parent))
+		while(!place_meeting(x + sign(velocity[XAXIS]), y, _solid_parent))
 		{
 			x += sign(velocity[XAXIS]);
 		}

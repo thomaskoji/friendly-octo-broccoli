@@ -25,4 +25,6 @@ if(g.jump[pressed])
 if(velocity[YAXIS] > 0)
 {	stateSwitch("wallLatch");}
 
+scr_ledgeGrabStateSwitch();
+
 #endregion
