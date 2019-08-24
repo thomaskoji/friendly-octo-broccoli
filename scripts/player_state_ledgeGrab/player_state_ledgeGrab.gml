@@ -2,7 +2,7 @@ if(state_new and !jumped)
 {
 	sprite_index = spr_playerLedgeGrab;
 	image_index = 0;
-	image_speed = defaultImageSpeed;
+	image_speed = .5;
 	
 	state_var[0] = 0; // ANIMATION STAGE
 	state_var[1] = 0; // ANIMATION TIMER
@@ -26,28 +26,13 @@ if(state_new and !jumped)
 	}
 }
 
-switch state_var[0]
+if(animation_hit_frame(11))
 {
-	case 0:
-		state_var[1] += 1;
-		if(state_var[1] >= 30)
-		{
-			state_var[2] = true;
-			var _bboxHeight = bbox_bottom - bbox_top;
-			var _bboxWidth = bbox_right - bbox_left;
+	var _bboxHeight = bbox_bottom - bbox_top;
+	var _bboxWidth = bbox_right - bbox_left;
 			
-			x += (_bboxWidth + 1) * face_direction;
-			y -= _bboxHeight;
-			state_var[0] += 1;
-			state_var[1] = 0; // reset timer
-		}
-	break;
+	x += (_bboxWidth + 1) * face_direction;
+	y -= _bboxHeight;
 	
-	case 1:
-		state_var[1] += 1;
-		if(state_var[1] >= 5)
-		{
-			stateSwitch("wait");
-		}
-	break;
+	stateSwitch("wait");
 }
