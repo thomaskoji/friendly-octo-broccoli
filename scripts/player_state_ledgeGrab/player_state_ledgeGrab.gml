@@ -26,7 +26,7 @@ if(state_new and !jumped)
 	}
 }
 
-if(animation_hit_frame(11))
+if(animation_hit_frame(10))
 {
 	var _bboxHeight = bbox_bottom - bbox_top;
 	var _bboxWidth = bbox_right - bbox_left;
@@ -34,5 +34,6 @@ if(animation_hit_frame(11))
 	x += (_bboxWidth + 1) * face_direction;
 	y -= _bboxHeight;
 	
+	sprite_index = spr_playerWait;
 	stateSwitch("wait");
 }
