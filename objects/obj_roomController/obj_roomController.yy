@@ -1,23 +1,14 @@
 {
-    "id": "b84d2208-e5b5-485d-adc8-3deb6597ad90",
+    "id": "61f3a178-0bbd-4b47-ad5d-58cbee1ef4de",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_soundController",
+    "name": "obj_roomController",
     "eventList": [
-        {
-            "id": "29ce4d05-5b72-424f-8cb8-29d34f0f7f21",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "b84d2208-e5b5-485d-adc8-3deb6597ad90"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "d4c64dda-5f75-4c83-ba94-be9626504ce9",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "93579f8a-d598-4edd-9bb6-b6cf7afcad50",
+    "spriteId": "cd27f0d0-39f2-43d9-918c-981505074d07",
     "visible": true
 }
