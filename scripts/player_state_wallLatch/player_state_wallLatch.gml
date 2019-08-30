@@ -3,10 +3,15 @@ if(state_new)
 	image_speed = defaultImageSpeed;
 	sprite_index = spr_playerWallLatch;
 	image_index = 0;
+	
+	state_var[1] = 0; // TIMER FOR WALL ATTACHING
 }
 
-scr_applyGravity(fallGravity,wallLatchMaxGravity);
-
+if (state_var[0] >= wallLatchStickTime)
+{
+	scr_applyGravity(wallLatchGravity,wallLatchMaxGravity);
+}
+ 
 #region state machine
 
 if(onWall != g.inputHorizontalTotal or onWall = 0)

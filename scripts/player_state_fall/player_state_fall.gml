@@ -20,9 +20,25 @@ if(onGroundTimer > 0)
 if(velocity[XAXIS] != 0)
 {	face_direction = sign(velocity[XAXIS]);}
 
-scr_applyGravity(fallGravity,fallMaxGravity);
+switch state_previous
+{
+	
+	default:
+		scr_applyGravity(fallGravity,fallMaxGravity);
+		scr_applyXMovement(g.inputHorizontalTotal, jumpAccel, jumpMaxSpeed, jumpFriction);
+	break;
 
-scr_applyXMovement(g.inputHorizontalTotal, jumpAccel, jumpMaxSpeed, jumpFriction);
+	case "backflip":
+		scr_applyGravity(backflipGravity,fallMaxGravity);
+		scr_applyXMovement(g.inputHorizontalTotal, backflipAccel, backflipMaxSpeed, jumpFriction);
+	break;
+	
+	case "wallJump":
+		scr_applyGravity(wallJumpGravity,fallMaxGravity);
+		scr_applyXMovement(g.inputHorizontalTotal, wallJumpAccel, wallJumpMaxSpeed, wallJumpFriction);
+	break;
+
+}
 
 #region state machine
 
