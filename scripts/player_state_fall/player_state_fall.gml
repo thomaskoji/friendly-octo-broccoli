@@ -42,8 +42,12 @@ switch state_previous
 
 #region state machine
 
-if(velocity[YAXIS] == 0)
-{	stateSwitch("wait");}
+if(onGround)
+{	
+	stateSwitch("wait");
+	scr_createDebugFlag(x,y,"landed", true); 
+	
+}
 
 if(g.inputHorizontalTotal != 0 && !g.slide[pressed] && velocity[YAXIS] == 0)
 {	stateSwitch("run");}

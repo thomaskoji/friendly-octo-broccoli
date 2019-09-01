@@ -19,9 +19,13 @@ if(state_new and !jumped)
 	y = round(y);
 	if(!position_meeting(_sideCheck, bbox_top, _solid_parent))
 	{
+		var _reps = 0; 
 		while(!position_meeting(_sideCheck, bbox_top, _solid_parent))
 		{
 			y += 1;
+			++_reps; 
+			if (_reps >= 999)
+			{scr_showErrorMessage("While Loop Fail: Ledge Grab");}
 		}
 	}
 }

@@ -33,12 +33,6 @@ if(g.jump[pressed] and onWall != 0)
 	jumped = false;
 }
 
-if(animation_hit_frame(1) and onGround)
-{
-	stateSwitch("wait");
-	jumped = false;
-}
-
 if(onWall != 0 and onWall = g.inputHorizontalTotal)
 {
 	stateSwitch("wallRun");
