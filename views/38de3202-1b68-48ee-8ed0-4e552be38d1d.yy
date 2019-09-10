@@ -13,7 +13,9 @@
         "619f3ee7-147c-436f-b247-7152a745307a",
         "93579f8a-d598-4edd-9bb6-b6cf7afcad50",
         "829cc508-20ec-492b-a6e5-ea39fdd9dbd2",
-        "cd27f0d0-39f2-43d9-918c-981505074d07"
+        "cd27f0d0-39f2-43d9-918c-981505074d07",
+        "00c3d704-6987-49e6-aad7-bb984ef60943",
+        "ca79a523-74c4-4236-b45d-46b1a9f97522"
     ],
     "filterType": "GMSprite",
     "folderName": "Controllers",

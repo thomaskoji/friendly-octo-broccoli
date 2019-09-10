@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "00c3d704-6987-49e6-aad7-bb984ef60943",
+            "Value": {
+                "id": "357d2ee6-29f5-4219-b37d-2b105751a208",
+                "resourcePath": "sprites\\spr_cameraController\\spr_cameraController.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "01be1870-85ee-4469-9d4b-6f85a1bd96a1",
             "Value": {
                 "id": "420d2193-ffd1-4d38-b82b-54dd72fef04e",
@@ -164,6 +172,14 @@
                 "id": "06d30ef3-0470-42d7-99a6-ff684bdfceef",
                 "resourcePath": "views\\1fb15e73-80a6-4b9b-acb9-9e03524cc626.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2739ef73-794d-4bdb-834c-ddb6d5edf2f1",
+            "Value": {
+                "id": "384b8e9a-dd58-4468-af6b-9fbd1d93136e",
+                "resourcePath": "objects\\obj_cameraAid\\obj_cameraAid.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -639,6 +655,14 @@
             }
         },
         {
+            "Key": "73979a09-cc27-42a7-95d6-efc1dc9273c2",
+            "Value": {
+                "id": "513f2c38-4d60-44fd-8bdc-2f41dafa398c",
+                "resourcePath": "objects\\obj_cameraController1\\obj_cameraController1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "73f45ea3-3644-4076-99c6-db90aa0397a2",
             "Value": {
                 "id": "2ed9c7b6-1231-4e12-ac8a-030d996eaf39",
@@ -716,14 +740,6 @@
                 "id": "c310843c-a092-497e-acb8-a8861254dd1a",
                 "resourcePath": "views\\80827a48-48f7-4114-a2d9-3fde1b019b65.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "8124f5cb-f617-4b78-b68f-d0c115bf3668",
-            "Value": {
-                "id": "9746b9c9-0340-49bd-8fa6-8ba659c82191",
-                "resourcePath": "objects\\obj_cameraController\\obj_cameraController.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -1140,6 +1156,14 @@
                 "id": "a97d6487-7d97-4ef1-8ebd-a3717afdc388",
                 "resourcePath": "scripts\\player_state_backflip\\player_state_backflip.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ca79a523-74c4-4236-b45d-46b1a9f97522",
+            "Value": {
+                "id": "967fad3b-2ee4-4bcf-a43d-4ca3da084e79",
+                "resourcePath": "sprites\\spr_cameraAid\\spr_cameraAid.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
